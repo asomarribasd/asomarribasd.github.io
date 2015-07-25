@@ -1,8 +1,8 @@
-# asomarribasd.github.io / www.slothslab.com
+## asomarribasd.github.io / www.slothslab.com
 
 </br>
 
-h1. Este repositorio es el codigo de mi blog
+## Este repositorio es el codigo de mi blog
 
 Es repositorio es automaticamente trasformado por "Jekyll":http://github.com/mojombo/jekyll en un sitio estatico cada vez que subo un cambio a `GitHub`.
 </br></br>
@@ -10,7 +10,7 @@ Por que Jekyll? El hecho de que los blogs tengan contenido estatico justifica mu
 Jekyll especificamente, es muy sencillo de usar (una vez configurado), pero lo mejor es que el contenido de tu blog puedes tenerlo gratis y seguro en Github.
 Es especialmente sencillo crear contenido con Textile or Markdown y los resultados son verdaderamente hermosos una vez que aprendes a usarlos.
 
-h1. Licencia
+## Licencia
 
 El contenido de este repositorio se divide en 2 partes, contenido y el Layout. 
 Para los terminos de la licencia el contenido dentro de los folders:
