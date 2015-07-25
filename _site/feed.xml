@@ -6,9 +6,22 @@
 </description>
     <link>http://www.slothslab.com/</link>
     <atom:link href="http://www.slothslab.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Jul 2015 10:23:55 -0700</pubDate>
-    <lastBuildDate>Fri, 24 Jul 2015 10:23:55 -0700</lastBuildDate>
-    <generator>Jekyll v3.0.0.pre.beta8</generator>
+    <pubDate>Sat, 25 Jul 2015 04:02:11 -0700</pubDate>
+    <lastBuildDate>Sat, 25 Jul 2015 04:02:11 -0700</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Publica Tu Blog a Gihub</title>
+        <description>
+</description>
+        <pubDate>Fri, 24 Jul 2015 11:20:06 -0700</pubDate>
+        <link>http://www.slothslab.com/jekyll/2015/07/24/publica-blog-github.html</link>
+        <guid isPermaLink="true">http://www.slothslab.com/jekyll/2015/07/24/publica-blog-github.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>Crear un blog con Octopress 3</title>
@@ -59,45 +72,40 @@ Blog en Github
 
 &lt;p&gt;3 - Creacion del blog&lt;/p&gt;
 
-&lt;p&gt;La mejor manera de trabajar con octopress es tomar ventaja de los comandos que pone a nuestra disposicion, pueden conocer de ellos con el comando&lt;/p&gt;
+&lt;p&gt;La mejor manera de trabajar con octopress es tomar ventaja de los comandos que pone a nuestra disposicion, pueden conocer de ellos con el comando &lt;/p&gt;
 
 &lt;p&gt;octopress -h&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 11 Jul 2015 10:44:24 -0700</pubDate>
-        <link>http://www.slothslab.com/octopress/2015/07/11/octopress-blog-template.html</link>
-        <guid isPermaLink="true">http://www.slothslab.com/octopress/2015/07/11/octopress-blog-template.html</guid>
+        <link>http://www.slothslab.com/jekyll/2015/07/11/octopress-blog-template.html</link>
+        <guid isPermaLink="true">http://www.slothslab.com/jekyll/2015/07/11/octopress-blog-template.html</guid>
         
         
-        <category>octopress</category>
+        <category>jekyll</category>
         
       </item>
     
       <item>
         <title>Hola a Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <description>&lt;p&gt;Esta es la oja de inicio de hola Jekyll, por que no la borro? Bueno tiene un tips interesantes como marcar una &lt;code&gt;palabra&lt;/code&gt;
+Solo lo personalizo un poco.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Ahmed&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Ahmed&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;http://www.slothslab.com/&quot;&gt;My Blog&lt;/a&gt; .&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 15 Jun 2015 12:56:14 -0700</pubDate>
-        <link>http://www.slothslab.com/jekyll/octopress/2015/06/15/hola-jekyll.html</link>
-        <guid isPermaLink="true">http://www.slothslab.com/jekyll/octopress/2015/06/15/hola-jekyll.html</guid>
+        <link>http://www.slothslab.com/jekyll/2015/06/15/hola-jekyll.html</link>
+        <guid isPermaLink="true">http://www.slothslab.com/jekyll/2015/06/15/hola-jekyll.html</guid>
         
         
         <category>jekyll</category>
-        
-        <category>octopress</category>
         
       </item>
     
