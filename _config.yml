@@ -1,0 +1,19 @@
+# Site settings
+title: Sloth's Lab
+email: asomarribasd@hotmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Cualquier cosa que la mente del hombre puede concebir y creer, puede ser conseguida - Napoleon Hill
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.slothslab.com" # the base hostname & protocol for your site
+twitter_username: ahmedsomarribas
+github_username:  asomarribasd
+
+# Build settings
+markdown: kramdown
+
+#gems:
+#  - octopress-debugger
+#  - octopress-quote-tag
+#  - octopress-solarized
+#  - octopress-codefence
+  
