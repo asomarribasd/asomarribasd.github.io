@@ -1,13 +1,13 @@
 ---
 layout: page
 title: "Acerca de mi"
-permalink: /acerca/
+permalink: /acercade/
 ---
 <div class="row">
 	<div class="col-md-8">
 	Soy un programador de C# basdo en San Jose, Costa Rica. He trabajado con todo tipo de proyectos, desde web pequenas hasta grandes sistemas de e-commerce.
 	</br></br>
-	Recienteme he utilizo Ruby en pequenos proyectos de tipo personal como una forma de crearlos mas rapidamente.
+	Recienteme utilizo Ruby en pequenos proyectos de tipo personal como una forma de crearlos m&aacute;s rapidamente.
 	</br></br>
 	Si tienes alguna idea para un proyecto y necesitas del componente tecnico para poder realizarlo, me encantaria poder conversar sobre ello.
 	</br></br>

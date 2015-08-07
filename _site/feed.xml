@@ -6,13 +6,13 @@
 </description>
     <link>http://www.slothslab.com/</link>
     <atom:link href="http://www.slothslab.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Jul 2015 04:02:11 -0700</pubDate>
-    <lastBuildDate>Sat, 25 Jul 2015 04:02:11 -0700</lastBuildDate>
+    <pubDate>Fri, 07 Aug 2015 10:14:39 -0700</pubDate>
+    <lastBuildDate>Fri, 07 Aug 2015 10:14:39 -0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Publica Tu Blog a Gihub</title>
-        <description>
+        <title>Publica Tu Blog a Github</title>
+        <description>&lt;p&gt;Entonces ya tengo my blog y ahora que?&lt;/p&gt;
 </description>
         <pubDate>Fri, 24 Jul 2015 11:20:06 -0700</pubDate>
         <link>http://www.slothslab.com/jekyll/2015/07/24/publica-blog-github.html</link>
@@ -88,16 +88,31 @@ Blog en Github
     
       <item>
         <title>Hola a Jekyll!</title>
-        <description>&lt;p&gt;Esta es la oja de inicio de hola Jekyll, por que no la borro? Bueno tiene un tips interesantes como marcar una &lt;code&gt;palabra&lt;/code&gt;
-Solo lo personalizo un poco.&lt;/p&gt;
+        <description>&lt;p&gt;30 dias depues de mi primer tutorial de &lt;a href=&quot;http://asaf.github.io/blog/2013/07/08/blogging-with-octopress-quick-installation/&quot;&gt;Octopress en 15 minutos&lt;/a&gt;
+por fin logre tener algo parecido a un blog corriendo. Pero la culpa no es del todo de Octopress, 
+es mia por no seguir la receta basica y querer darle un poco de vida al Template Basico.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Ahmed&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Ahmed&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Mi primer acercamiento a Jekyll fue atravez de Octopress, una gema que trabaja de la “mano” o mas bien sobre Jekyll y que goza de muy buena reputación en la comunidad.
+Al momento del inicio de este mi primer blog no tengo muy claro como trabaja Markdown o Liquid (Básicos para adornar cada Blog). Y no estoy seguro de cuantas cosas mas desconozco. Lo que si tengo claro es que mis primeros blogs estarán dirigidos a este tema.
+Espero poder compartir algunos tips de mis errores.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://www.slothslab.com/&quot;&gt;My Blog&lt;/a&gt; .&lt;/p&gt;
+&lt;h3 id=&quot;que-podras-encontrar-en-este-blog&quot;&gt;Que podras encontrar en este blog?&lt;/h3&gt;
+
+&lt;p&gt;Basicamente cualquier tema  del area de integracion de sistemas(Biztalk, Emule), 
+Arquitectura de Software(Patrones de diseño) y temas en los alrededores de Big Data(Hadoop) y Ciencias de Datos (R).&lt;/p&gt;
+
+&lt;h3 id=&quot;por-que-el-blog&quot;&gt;Por que el blog?&lt;/h3&gt;
+
+&lt;p&gt;Y por que no? &lt;/p&gt;
+
+&lt;p&gt;Planeo blogear en es español por que considero que existe una evidente falta de generacion de conocimiento.
+Los técnicos latinos no blogueamos lo suficiente y por tanto muchas veces es imposible encontrar alguna información en nuestro lenguaje madre.
+Talvez por que cuando se esta mas avanzado se busca en ingles, pero esto no ayuda a compartir el conocimiento con quienres estan iniciado.
+Y tambien complica un poco la solución de problemas para mas de uno.&lt;/p&gt;
+
+&lt;p&gt;Espero que alguno de estos micro-artículos les sea de utilidad.&lt;/p&gt;
+
+&lt;p&gt;Saludos a todos&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 15 Jun 2015 12:56:14 -0700</pubDate>

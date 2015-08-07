@@ -1,3 +1,7 @@
+# ignore my drafts
+_drafts
+# ignore my locally generated Blog (For my test)
 _site
+# ruby generated
 .bundle
 Gemfile.lock

@@ -7,7 +7,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.slothslab.com" # the base hostname & protocol for your site
 twitter_username: ahmedsomarribas
 github_username:  asomarribasd
-
+analytics: "UA-65836020-1"
+  
 # Build settings
 markdown: kramdown
 
