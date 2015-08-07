@@ -5,15 +5,41 @@ title: "Contacto"
 permalink: /contacto/
 ---
 
+<script>
+$(document).ready(function(){
+	var $contactForm = $("#sendForm");
+	$contactForm.submit(function(e) {
+	alert("Got it!");
+		e.preventDefault();
+		$.ajax({
+			url: '//formspree.io/{{ site.email }}',
+			type: 'post',
+			data: "data=" + $($contactForm).serialize(),
+			dataType: 'json',
+			beforeSend: function() {
+				$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+			},
+			success: function(data) {
+				$contactForm.find('.alert--loading').hide();
+				$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+			},
+			error: function(err) {
+				$contactForm.find('.alert--loading').hide();
+				$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+			}
+		});
+	});
+});
+</script>
 <div class="row">
 
-## Tiene preguntas? 
+    <div class="col-lg-10 col-lg-offset-1">
+    <h3> Tiene preguntas? </h3>
 
-#### Yo tengo respuestas (algunas)
+<h4> Yo tengo respuestas (algunas) </h4> 
 
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <p>Necesita contactarme? Puede llenar el formulario y le contactare en menos de 24 horas!</p>
-        <form name="sentMessage" id="contactForm" novalidate="">
+        <form name="sendForm" id="sendForm" method="post">
             <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls">
                     <label>Name</label>
