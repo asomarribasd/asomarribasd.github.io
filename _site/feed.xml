@@ -6,8 +6,8 @@
 </description>
     <link>http://www.slothslab.com/</link>
     <atom:link href="http://www.slothslab.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Aug 2015 14:08:33 -0700</pubDate>
-    <lastBuildDate>Fri, 07 Aug 2015 14:08:33 -0700</lastBuildDate>
+    <pubDate>Fri, 07 Aug 2015 22:06:06 -0700</pubDate>
+    <lastBuildDate>Fri, 07 Aug 2015 22:06:06 -0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -25,56 +25,102 @@
     
       <item>
         <title>Crear un blog con Octopress 3</title>
-        <description>&lt;p&gt;Como crear un Blog Estatico
-(Jekyll + Octopress 3 + GitHub)&lt;/p&gt;
+        <description>&lt;ul&gt;
+  &lt;li&gt;Como crear un Blog Estatico (HTML)&lt;/li&gt;
+  &lt;li&gt;(Jekyll + Octopress 3)&lt;/li&gt;
+  &lt;li&gt;Nivel de Experticia requirido: No tecnico / Basico&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;En este blog voy a hablar de como crear un blog con Octopress, voy a dividir el proceso en 5 pasos, si conoces de ruby puedes saltarte el paso uno.&lt;/p&gt;
+&lt;h2 id=&quot;generalidades&quot;&gt;Generalidades&lt;/h2&gt;
 
-&lt;p&gt;Installar pre-requisitos (rvm/ruby/rubygems)
-Instalacion Octopress 3
-Crear blog tema
-Modificar tu Blog
-Blog en Github 
-(opcional) domain name of your choice&lt;/p&gt;
+&lt;p&gt;Hoy vamos a ver como crear un blog con Octopress, Octopress es una gema (sub-aplicacion) de Jekyll, por lo que seria mas justo decir que vamos a crear un sitio con Jekyll y utilizar Octopress para crear posts de nuestro Blog.&lt;/p&gt;
 
-&lt;p&gt;1 - Pre-requisitos&lt;/p&gt;
+&lt;p&gt;El tipo de Blog que vamos a crear se les llama estatico, esto significa que es HTML que no cambia en forma dinamica, tampoco require de una base de datos. Cuando tengas tu sitio listo para ser subido a un servidor, tendras una coleccion de paginas estaticas, pero relacionadas entre ellas.&lt;/p&gt;
+
+&lt;p&gt;Quien hace esto posible? Lo hace Jekyll, este es un proyecto programado en un lenguaje lladamo Ruby, funciona de manera que instalas Jekyll (se les llama gemas) en tu maquina y la herramienta te permite tener una serie de documentos, por un lado un template de como lucira tu BLog y por el otro una serie de archivos con el contenido de tus Blogs.
+Jekyll utilizara eso como insumo para generarte tu Blog estatico, el cual luego podras subir a tu sitio.&lt;/p&gt;
+
+&lt;h2 id=&quot;por-que-jekyll-y-por-que-un-blog-estatico&quot;&gt;Por que Jekyll y por que un blog estatico?&lt;/h2&gt;
+
+&lt;p&gt;La razon principal es que Jekyll al generarme HTML estatico me permite utilizar la funcionalidad de Github.com que me permite almacenar mi blog en forma gratuita.&lt;/p&gt;
+
+&lt;p&gt;Si son muy nuevos, tengan paciencia. Los pasos son sencillos pero tienden a verse un poco agobiantes, pueden preguntar si tienen alguna duda.&lt;/p&gt;
+
+&lt;p&gt;Vamos a ver el proceso en 4 pasos, si ya tienes ruby puedes saltarte el paso uno.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Installar pre-requisitos (rvm/ruby/rubygems)&lt;/li&gt;
+  &lt;li&gt;Instalacion Jekyll y Octopress 3&lt;/li&gt;
+  &lt;li&gt;Crear blog &lt;/li&gt;
+  &lt;li&gt;Crar tus Posts&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;pre-requisitos&quot;&gt;1 - Pre-requisitos&lt;/h2&gt;
 
 &lt;p&gt;Octopress es una gema de Ruby por tanto primero deben hacegurarse de tener ruby verificarlo es muy facil solo tienen que escribir en la consola&lt;/p&gt;
 
-&lt;p&gt;ruby –version&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;
+ruby --version
+&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;si ruby se encuentra instalado les retornara el numero de version, algo parecido a esto:&lt;/p&gt;
 
-&lt;p&gt;ruby 2.1.3p242 (2014-09-19 revision 47630) [x86_64-linux]&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;
+ruby 2.1.3p242 (2014-09-19 revision 47630) [x86_64-linux]
+&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Si no esta instalado, segun la documentacion de RVM, podran instalar ruby y su administrador de versiones en un solo comando:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;$ \curl -sSL https://get.rvm.io&lt;/td&gt;
-      &lt;td&gt;bash -s stable –ruby&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;
+$ \curl -sSL https://get.rvm.io | bash -s stable --ruby
+&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Ahora si no se encuentran usando linux, pueden encontrar informacion mas detallada aqui:&lt;/p&gt;
+&lt;p&gt;Esto funciona bien en Ubuntu, ahora si tienen algun error u otro sabor de Linux pueden encontrar informacion mas detallada en la pagina de &lt;a href=&quot;https://www.ruby-lang.org/en/documentation/installation/&quot;&gt;ruby&lt;/a&gt;.
+Si usan Windows, que esperan para cambiarse?? Bromeo, pueden encontrar el instalador y sus instrucciones de instalacion en &lt;a href=&quot;http://rubyinstaller.org/&quot;&gt;Ruby Instaler&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;https://www.ruby-lang.org/en/documentation/installation/&lt;/p&gt;
+&lt;p&gt;No encontre las instrucciones en espa&amp;amp;nacute;ol, en cuanto las encuentre las agregare o las escribire en alguno de mis posts.&lt;/p&gt;
 
-&lt;p&gt;Y asi de rapido tenemos nuestros requisitos listos.&lt;/p&gt;
+&lt;h2 id=&quot;instalacion-octopress&quot;&gt;2 - Instalacion octopress&lt;/h2&gt;
 
-&lt;p&gt;2 - Instalacion octopress&lt;/p&gt;
+&lt;p&gt;Como mencione, Jekyll al igual que octopress son gemas y por tanto se instala como cualquier otra gema de ruby:&lt;/p&gt;
 
-&lt;p&gt;Como mencione, octopress es una gema y por tanto se instala como cualquier otra gema de ruby:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gem install jekyll&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;$ gem install octopress&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gem install octopress	&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;3 - Creacion del blog&lt;/p&gt;
+&lt;p&gt;Jekyll les dara las herramientas necesarias para crear el sitio, y Octopress unos comandos interesantes para el manejo de las posts.&lt;/p&gt;
 
-&lt;p&gt;La mejor manera de trabajar con octopress es tomar ventaja de los comandos que pone a nuestra disposicion, pueden conocer de ellos con el comando &lt;/p&gt;
+&lt;h2 id=&quot;creacion-del-blog&quot;&gt;3 - Creacion del blog&lt;/h2&gt;
 
-&lt;p&gt;octopress -h&lt;/p&gt;
+&lt;p&gt;La mejor manera de trabajar con octopress es tomar ventaja de los comandos que pone a nuestra disposicion, pueden conocer de ellos con el comando 
+&lt;code&gt;
+octopress -h
+&lt;/code&gt;
+Para crear nuestro Blog basta con abrir la consola y dirigirnos al folder donde queremos que se cree nuestro Blog, ana vez ahi basta con ecribir el commando:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;octopress new &quot;NombreBlog&quot; &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Esto les va a crear varios archivos y folders en donde se encuentran, observen que tienen un folder llamado&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;_posts&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Aqui encontran los archivos con sus posts, cada archivo corresponde a uno y siguen un formato de:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;anio-mm-dd-nombre-blog.markdown&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;La documentacion completa se encuentra con el codigo de &lt;a href=&quot;https://github.com/octopress/octopress&quot;&gt;Octopress 3&lt;/a&gt;. No dejen de visitarla.&lt;/p&gt;
+
+&lt;h2 id=&quot;creacion-de-tus-posts&quot;&gt;4 - Creacion de tus posts&lt;/h2&gt;
+
+&lt;p&gt;Para crear un nuevo blog basta con ir a la consola, buscar el folder de tu sitio y escribir:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;octopress new post &quot;nombre-post&quot; &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;esto creara un archivo nuevo dentro del folder &lt;code&gt;_posts&lt;/code&gt;, abrelo con tu editor de texto favorito salva los cambios y ejecuta jekyll para que puedas ver tu post.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;jekyll serve&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;y navega al sitio &lt;code&gt;http://127.0.0.1:4000/&lt;/code&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 11 Jul 2015 10:44:24 -0700</pubDate>
