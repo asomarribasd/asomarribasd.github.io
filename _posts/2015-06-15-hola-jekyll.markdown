@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Hola a Jekyll!"
+title:  "Hola a Jekyll y Octopress!"
 date:   2015-06-15 19:56:14
-categories: jekyll
+categories: [jekyll, octopress]
 ---
 
 30 dias depues de mi primer tutorial de [Octopress en 15 minutos][octo-15]

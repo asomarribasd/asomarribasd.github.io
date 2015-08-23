@@ -2,7 +2,7 @@
 layout: post
 title: "Crear un blog con Octopress 3"
 date: 2015-07-11T10:44:24-07:00
-categories: jekyll
+categories: [jekyll, octopress]
 ---
 
 * Como crear un Blog Estatico (HTML)
