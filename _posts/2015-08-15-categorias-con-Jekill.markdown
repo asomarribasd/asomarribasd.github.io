@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Categorias o Tags en Jekyll"
+title:  "Categorias y Tags en Jekyll"
 date:   2015-08-15 18:00:00
 categories: [jekyll]
 tags: [jekyll, octopress]
 ---
 
-## Clasificacion en Jekyll
+## Clasificaciones en Jekyll
 
-Para la clasificacion y relacion de tus blogs, Jekyll implementa dos metodologias similares en la forma de difinirlas pero diferentes en cuanto a sus caracteristicas.
-Estas son [categotirias] y [tags] las cuales se definen en el blog.
+Para la clasificaci&oacute;n y crear relaciones en tus blogs, Jekyll implementa dos metodologias similares en la forma de difinirlas pero diferentes en cuanto a sus caracteristicas.
+Estas son [categotirias] y [tags] las cuales se definen en la cabacera del Blog.
 
 ## Categorias en Jekyll
 
@@ -18,23 +18,55 @@ Se usa por lo general para marcar la tematica global a la que pertenece el blog,
 
 ## Tags en Jekyll
 
-Los tags son palabras "claves" con las que se puede relacionar tu blog, sin que esto determine un cambio en la categoria o clasificacion del blog.
+Los tags son palabras "claves" con las que se puedes relacionar tus blog, sin que esto determine un cambio en la categoria o clasificaci&oacute;n general del blog.
 Tener tags en los blogs se puede utilizar para relacionarlos con temas comunes y navegar atravez de dichos temas.
+Algo que me gusta de los tags es que son perfectos para crear secciones como "Posts Similares" o una "nube" de terminos/tematica.
 
 ## Post Similares con Tags
 
+Una forma para lo cual usar Tags se vuelve muy util es para crear secciones de "posts similares" de esta forma asignando tags con palabras claves del contenido de tu blog puedes mostrar al lector blogs con contenido similar que el lectori podr&iacute;a estar interesado en leer.
+Despues de buscar un poco encontre algo que se ajustaba a mi necesidad de agregar post similares al que el lector se encontraba leyendo. El siguiente me gusta en especial por que no es un plugin. Esta basado en codigo de Liquid y hasta el momento no he tenido ningun problema.
 
-<code class="ruby">
-</code>
-Excelent Blog
+Se los dejo.
+
+{% highlight html %}
+
+{% raw %} 
+{% assign hasSimilar = '' %}
+{% for post in site.related_posts %}
+    {% assign postHasSimilar = false %}
+    {% for tag in post.tags %}
+        {% for thisTag in page.tags %}
+            {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
+                {% if hasSimilar.size == 0 %}
+                <h4>Posts Similares</h4>
+                <ul>
+                {% endif %}
+                <li class="relatedPost">
+                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
+                    {% if post.series %}
+                        (Series: {{ post.series }})
+                    {% endif %}
+                    </a>
+                </li>
+                {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+                {% assign postHasSimilar = true %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+{% if hasSimilar.size > 0 %}
+    </ul>
+{% endif %}
+{% endraw %}
+{% endhighlight %}
+
+Este codigo es autoria de 
+[Post Similares](http://zhangwenli.com/blog/2014/07/15/jekyll-related-posts-without-plugin/) y funciona a la perfeccion.
+Con unas pocas modificaciones pueden verlo funcionando en la parte inferior del blog.
 
 
 
-http://schoewilliam.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html
-
-Me gusta este look
-
-http://christianspecht.de/tags/<br />
 
 
-[Post Similares](http://zhangwenli.com/blog/2014/07/15/jekyll-related-posts-without-plugin/)
+
