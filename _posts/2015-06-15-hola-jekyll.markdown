@@ -18,15 +18,18 @@ Espero poder compartir algunos tips de mis errores.
 
 Basicamente cualquier tema  del area de integracion de sistemas(Biztalk, Emule), 
 Arquitectura de Software(Patrones de dise&ntilde;o) y temas en los alrededores de Big Data(Hadoop) y Ciencias de Datos (R).
+Estare importanto mis blogs anteriores poco a poco.
 
 ### Por que el blog?
 
 Y por que no? 
 
-Planeo blogear en es espa&ntilde;ol por que considero que existe una evidente falta de generacion de conocimiento.
+Planeo blogear en es espa&ntilde;ol por que considero que existe una evidente falta de generaci&oacute;n de conocimiento.
 Los t&eacute;cnicos latinos no blogueamos lo suficiente y por tanto muchas veces es imposible encontrar alguna informaci&oacute;n en nuestro lenguaje madre.
 Talvez por que cuando se esta mas avanzado se busca en ingles, pero esto no ayuda a compartir el conocimiento con quienres estan iniciado.
 Y tambien complica un poco la soluci&oacute;n de problemas para mas de uno.
+
+Adicionalmente, blogear es una excelente practica para volverte un buen comunnicador, ayuda a ser conciso, claro y expresarte en una manera sencilla para disminuir la complejidad de trasmision de tu mesanje o idea.
 
 
 Espero que alguno de estos micro-art&iacute;culos les sea de utilidad.

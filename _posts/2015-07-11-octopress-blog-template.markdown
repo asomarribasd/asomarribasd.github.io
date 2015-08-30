@@ -99,5 +99,24 @@ esto creara un archivo nuevo dentro del folder `_posts`, abrelo con tu editor de
 
 `jekyll serve`
 
+El comando de jekyll, serve lo que hace es compilar tu sitio y crear un servidor para que puedas navegarlo en una forma de preview de como se vera tu sitio final.
+
+Veras un bloque parecido al siguiente, anunciando que el servidor esta corriendo de no ser asi, veras una serie de errores, que te indicaran que algo anda mal con tu codigo.
+
+{% highlight html %}
+asomarribasd@ubuntu:~/rubyProjects/blog/slothslab$ jekyll serve
+Configuration file: /home/asomarribasd/rubyProjects/blog/slothslab/_config.yml
+            Source: /home/asomarribasd/rubyProjects/blog/slothslab
+       Destination: /home/asomarribasd/rubyProjects/blog/slothslab/_site
+      Generating... 
+                    done.
+ Auto-regeneration: enabled for '/home/asomarribasd/rubyProjects/blog/slothslab'
+Configuration file: /home/asomarribasd/rubyProjects/blog/slothslab/_config.yml
+    Server address: http://0.0.0.0:4000/
+  Server running... press ctrl-c to stop.
+
+{% endhighlight %}
+
 y navega al sitio `http://127.0.0.1:4000/`
 
+Finalmente, dirigete a la consola nuevamente y apreta las teclas "ctrl + C" para salir de la prevista.
