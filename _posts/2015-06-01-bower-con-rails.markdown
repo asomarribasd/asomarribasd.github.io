@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Como usar Bower en Rails!"
+title:  "Como usar Bower con Rails!"
 date:   2015-06-01 14:44:00
 categories: [rails]
 tags: [ruby, rails, bower, node]
@@ -9,7 +9,7 @@ tags: [ruby, rails, bower, node]
 
 ## Bower Que?
 
-En el raro que caso de que aun no se los mencionen, Bower es lo que llamariasmos un administrador de paquetes/recursos web, entre ellos css, javascript en inclusive html.
+En el raro que caso de que aun no se los mencionen, Bower es lo que llamariamos un administrador de paquetes/recursos web, entre ellos css, javascript en inclusive html.
 Creado por nuestros buenos amigos de Twitter. Pero por que usar, en que nos puede ayudar?
 
 Si ya estan familiarizados con Rails y la forma de agregar gemas a tu proyecto y luego ejecutar "bundle install" para que dichas gemas sean bajadas del repositorio, sabran lo util que es para evitar guardar los componentes de terceros en tu repositorio, asi como actualizarlos o instalar nuevos.
