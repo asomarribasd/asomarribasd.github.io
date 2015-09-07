@@ -6,12 +6,10 @@ permalink: /acercade/
 
 <div class="row">
 	<div class="col-md-8">
-		Soy un programador de C# basdo en San Jose, Costa Rica. He trabajado con todo tipo de proyectos, desde web pequenas hasta grandes sistemas de e-commerce.
-		</br></br>
-		Recienteme utilizo Ruby en pequenos proyectos de tipo personal como una forma de crearlos m&aacute;s rapidamente.
-		</br></br>
-		Si tienes alguna idea para un proyecto y necesitas del componente tecnico para poder realizarlo, me encantaria poder conversar sobre ello.
-		</br></br>
+		Creativo y proactivo, con mas de 15 a&nacute;os de experiencia en Desarrollo de aplicaciones y Tecnologia en general.
+	 <br><br />
+		Creo que la determinacion, una actitud positiva y trabajo fuerte son base para alcanzar las metas.
+
 	</div>
 	<div class="col-md-4" style="float:right;box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);">
 			<img src="/images/AhmedSomarribas.jpg">
@@ -20,7 +18,7 @@ permalink: /acercade/
 <div class="row">
 	<div class="col-md-12">
 		
-		<h3>Detalles de Contacto</h3>
+		<h3>Informaci&oacute;n de Contacto</h3>
 		<br>
 		https://github.com/asomarribasd
 		<br>
