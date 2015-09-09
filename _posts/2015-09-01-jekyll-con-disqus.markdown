@@ -15,13 +15,15 @@ Que tiene de maravilloso?
 Para empezar podria mencionar que no se que me tomo mas tiempo si registrarme en su sitio (45 segundos) o habilitar el codigo en mi blog.
 Es tan sencillo como copiar el script que te ponen a tu disposici&oacute;n, en el lugar que quieres que se muestren los comentarios. Lo cual es usualmente al final del blog.
 
-Tan facil como te digo, puedes tener una seccion de comentarios para cada pagina que desees y tus lectores, amigos, criticos y demas pueden dejarte comentarios con solo tener una cuenta de facebook / google plus o twitter, suena bien no? Pues trabaja igual de bien, si no solo ve al final de este blor y mira la seccion de comentarios.
+Tan facil como te digo, puedes tener una seccion de comentarios para cada pagina que desees y tus lectores, amigos, criticos y demas, pueden dejarte comentarios con solo tener una cuenta de facebook, google plus o twitter, suena bien no? Pues trabaja igual de bien, ve al final de este blog y mira la seccion de comentarios para darte una idea de como queda la integraci&oacute;n.
 
 ## Como implemento Disqus en Jekyll
 
 Implementar Disqus es mas facil de lo que uno podria imaginarse. Segun donde quieras aceptar comentarios, en mi caso quiero que todos los posts tengan sus propios comentarios.
 
-Para ello solo me dirijo al layout de `posts.html` y agrego donde quiero que esten los comentarios el script que adjuto. Por lo general se agregan estos comentarios en la parte baja del post.
+Para ello solo me dirijo al layout de `posts.html` y agrego donde quiero que esten los comentarios, el script que adjuto. 
+Fijate que el script no tiene el nombre de la cuenta, tiene que reemplazarce por el id que le diste a tu cuenta cuando la creas.
+En todo caso en la pagina misma de Discus podr&aacute;s encontrar el codigo que necesitas incertar, ya personalizado con tu cuenta.
 
 
 ## Implementaci&oacute;n

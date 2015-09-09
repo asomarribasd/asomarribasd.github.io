@@ -22,6 +22,7 @@ Si quieres que solo exista una forma de accesso para mayor control, Singleton es
 
 ## Implementacion de un patron Singleton C\#
 
+
 {% highlight csharp %}
 
 	/// <summary>
