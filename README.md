@@ -4,7 +4,7 @@
 
 ## Este repositorio es el codigo de mi blog
 
-Es repositorio es automaticamente trasformado por "Jekyll":http://github.com/mojombo/jekyll en un sitio estatico cada vez que subo un cambio a `GitHub`.
+Es repositorio es automaticamente trasformado por [Jekyll](https://github.com/jekyll/jekyll) en un sitio estatico cada vez que subo un cambio a `GitHub`.
 </br></br>
 Por que Jekyll? El hecho de que los blogs tengan contenido estatico justifica muy bien el uso de una herramienta que genere contenido de ese tipo.
 Jekyll especificamente, es muy sencillo de usar (una vez configurado), pero lo mejor es que el contenido de tu blog puedes tenerlo gratis y seguro en Github.

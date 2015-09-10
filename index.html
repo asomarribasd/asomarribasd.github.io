@@ -6,23 +6,22 @@ layout: default
 <div class="home col-md-8">
 
   <h1 class="page-heading">Publicaciones recientes</h1>
-
+	<br />
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+        <h4>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </h4>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">Subscribase <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
-<div class="col-md-4">Release 01 / 09 / 2015 </br>
+<div class="col-md-4">Release - 01 / 12 / 2015 </br>
 	<img src="/images/Web-en-construccion.jpg" width="250px"></br>
 	<img src="/images/bilingual-watch-your-step-sign.png" width="250px">
 </div>
