@@ -1,6 +1,8 @@
 ---
 layout: page
+title: "Categorias"
 permalink: /categorias/
+isArchieve: true
 ---
 
 <div>
