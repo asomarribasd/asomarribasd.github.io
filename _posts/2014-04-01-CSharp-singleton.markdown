@@ -2,8 +2,8 @@
 layout: post
 title:  "Patron Singleton!"
 date:   2014-04-01 19:56:14
-categories: [design patterns]
-tags: [design, paterns, csharp, .net]
+categories: [arquitectura software]
+tags: [design paterns, csharp, .net]
 ---
 
 ## En que consiste el patron Singleton?
