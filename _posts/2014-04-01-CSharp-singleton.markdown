@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Patron Singleton!"
+title:  "Patron Singleton"
 date:   2014-04-01 19:56:14
 categories: [arquitectura software]
 tags: [design paterns, csharp, .net]
