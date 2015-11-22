@@ -105,10 +105,11 @@
  * Site footer
  */
 .site-footer {
-    background-color: #162736;
-    color: #cad6de;
+    background-color: #162736; //#41606f; //#162736;
+    color: #DDDDDD; //#cad6de;
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    border-top: 6px solid #e64917; //Boder Rojo Superior
 }
 
 .footer-heading {
