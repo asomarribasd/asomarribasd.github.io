@@ -2,7 +2,7 @@
 layout: post
 title:  "Caso Saudi-Aramco!"
 date:   2015-11-13 16:00:00
-categories: [python, "software security"]
+categories: ["software security"]
 tags: [security ]
 ---
 
