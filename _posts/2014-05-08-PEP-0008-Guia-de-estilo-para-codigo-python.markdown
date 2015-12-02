@@ -432,20 +432,24 @@ Opcional plotz dice zorglub la bizbaz
 primero." ""
 Para uno docstrings liner, por favor mantenga el cierre "" "en la misma línea.
 
-Versión Contabilidad
+##Control de Versión 
+
 Si usted tiene que tener Subversion, CVS, o crud RCS en el archivo de origen, hacerlo de la siguiente manera.
 
 __version__ = "$ Revision $" 
 # $ $ Fuente
 Estas líneas deben incluirse después docstring del módulo, antes de cualquier otro código, separados por una línea en blanco arriba y abajo.
 
-Convenciones de nomenclatura
+##Convenciones de nomenclatura
+
 Las convenciones de nomenclatura de la biblioteca de Python son un poco un lío, así que nunca conseguirán esta completamente consistente - sin embargo, aquí están las normas de nomenclatura recomendados actualmente. Nuevos módulos y paquetes (incluyendo marcos de terceros) deben escribirse con estas normas, pero en una biblioteca existente tiene un estilo diferente, se prefiere la consistencia interna.
 
-Principio fundamental
+###Principio fundamental
+
 Nombres que son visibles para el usuario como partes públicas de la API deben seguir las convenciones que reflejan el uso en lugar de la ejecución.
 
-Descripción: Estilos de nomenclatura
+###Descripción: Estilos de nomenclatura
+
 Hay un montón de estilos diferentes nombres. Ayuda a ser capaces de reconocer lo que el estilo de nomenclatura se utiliza, independientemente de lo que se utilizan.
 
 Los estilos siguientes nombres comúnmente se distinguen:
@@ -485,45 +489,54 @@ Tkinter.Toplevel (maestro, clase _ = 'NombreClase')
 
  __double_leading_and_trailing_underscore__: objetos o atributos que viven en espacios de nombres controlados por el usuario "mágicos". Ej __init__, __import__ o __file__. Nunca inventar esos nombres; sólo los utilizan como se documenta.
 
-Convenciones de nomenclatura: prescriptiva
-Nombres que se deben evitar
+###Convenciones de nomenclatura: prescriptiva
+
+####Nombres que se deben evitar
+
 Nunca use los caracteres 'l' (letra minúscula el), "O" (letra mayúscula oh), o "yo" (carta de ojo en mayúsculas) como nombres de variables de un solo carácter.
 
 En algunas fuentes, estos personajes son indistinguibles de los números uno y cero. Cuando la tentación de utilizar 'l', utilice 'L' en su lugar.
 
-Paquete y Módulo Nombres
+####Paquete y Módulo Nombres
+
 Los módulos deben tener nombres cortos, todo en minúsculas. De realce se pueden utilizar en el nombre del módulo si mejora la legibilidad. Paquetes de Python también deben tener nombres cortos, todo en minúsculas, aunque no se recomienda el uso de guiones.
 
 Cuando un módulo de extensión escrita en C o C ++ tiene un módulo de Python acompañamiento que ofrece un nivel superior (por ejemplo, más orientado a objetos) interfaz, el / C ++ módulo C tiene un subrayado inicial (por ejemplo _socket).
 
-Nombres Genéricos
+####Nombres Genéricos
+
 Normalmente nombres de clase deben utilizar la convención CapWords.
 
 La convención de nomenclatura para las funciones se puede utilizar en lugar en caso de que la interfaz se documenta y se utiliza principalmente como exigible.
 
 Tenga en cuenta que hay una convención separada para orden interna nombres: nombres más builtin son palabras individuales (o dos palabras corren juntos), con la convención CapWords utiliza sólo para nombres de excepción y las constantes de orden interna.
 
-Nombres de excepción
+####Nombres de excepción
+
 Debido a que las excepciones deben ser clases, la convención de nombres de clase se aplica aquí. Sin embargo, usted debe usar el sufijo "Error" en sus nombres de excepción (si la excepción de hecho es un error).
 
-Nombres de variables globales
+####Nombres de variables globales
+
 (Esperemos que estas variables son para uso dentro de un módulo solamente.) Las convenciones son aproximadamente los mismos que los de las funciones.
 
 Los módulos que se han diseñado para su uso a través de la M import * deben utilizar el __all__ mecanismo para evitar la exportación de variables globales, o utilizar la convención anterior de anteponiendo dichos globales con un guión bajo (que es posible que desee hacer para indicar estas variables globales son "módulo no pública ").
 
-Nombres de función
+####Nombres de función
+
 Los nombres de funciones deben estar en minúsculas, con palabras separadas por guiones bajos como sea necesario para mejorar la legibilidad.
 
 MixedCase sólo se permite en contextos en los que ya es el estilo predominante (por ejemplo threading.py), para conservar la compatibilidad hacia atrás.
 
-Funciones y métodos argumentos
+####Funciones y métodos argumentos
+
 Utilice siempre uno mismo para el primer argumento de los métodos de instancia.
 
 Utilice siempre cls para el primer argumento a los métodos de la clase.
 
 Si conflictos de nombres de un argumento de función con una palabra clave reservada, es generalmente mejor para anexar un solo guión de arrastre en lugar de utilizar una corrupción abreviatura o la ortografía. Así class_ es mejor que clss. (Tal vez mejor es evitar este tipo de enfrentamientos por el uso de un sinónimo.)
 
-Método Nombres y variables de instancia
+####Método Nombres y variables de instancia
+
 Utilice las reglas de denominación de función: minúsculas con las palabras separadas por guiones bajos como sea necesario para mejorar la legibilidad.
 
 Utilice una líder subrayar sólo para métodos no públicos y las variables de instancia.
@@ -534,10 +547,12 @@ Python destroza estos nombres con el nombre de la clase: si la clase Foo tiene u
 
 Nota: hay una cierta controversia sobre el uso de __names (ver más abajo).
 
-Constantes
+####Constantes
+
 Constantes suelen definirse en un nivel de módulo y se escriben en letras mayúsculas con guiones bajos separar palabras. Los ejemplos incluyen MAX_OVERFLOW y Total.
 
-Diseñar para la herencia
+####Diseñar para la herencia
+
 Siempre deciden si los métodos de una clase y variables de instancia (en conjunto: "atributos") debe ser pública o no pública. En caso de duda, elija no pública; es más fácil de hacerlo público a más tardar para hacer un atributo público no pública.
 
 Atributos públicos son aquellos que usted espera clientes no vinculados de la clase de usar, con su compromiso de evitar cambios hacia atrás incompatibles. Atributos no públicos son aquellos que no están destinados a ser utilizados por terceros; usted hace ninguna garantía de que los atributos no públicos no cambiarán o incluso eliminar.
@@ -570,7 +585,8 @@ Nota 2: Nombre mangling puede hacer ciertos usos, como la depuración y __ __get
 
 Nota 3: No todo el mundo le gusta el nombre mangling. Trate de balancear la necesidad de evitar conflictos de nombre accidentales con posible uso por personas que llaman avanzados.
 
-Interfaces públicas e internas
+###Interfaces públicas e internas
+
 Todas las demás garantías de compatibilidad hacia atrás sólo se aplican a las interfaces públicas. En consecuencia, es importante que los usuarios sean capaces de distinguir claramente entre interfaces públicas e internas.
 
 Las interfaces documentadas son considerados pública, a menos que la documentación de los declara explícitamente que las interfaces provisionales o internos exentos de las habituales garantías de compatibilidad hacia atrás. Todas las interfaces indocumentados deben ser asumidas como interna.
@@ -583,7 +599,8 @@ Una interfaz también se considera interna si cualquier espacio de nombres que c
 
 Nombres importados deben considerarse siempre un detalle de implementación. Otros módulos no deben confiar en el acceso indirecto a dichos nombres importados, salvo que formen parte explícitamente documentada de la API del módulo que contiene, como os.path o de un paquete __init__ módulo que expone la funcionalidad de submódulos.
 
-Recomendaciones de Programación
+##Recomendaciones de Programación
+
 Código debe ser escrito de una manera que no perjudican a otras implementaciones de Python (PyPy, Jython, IronPython, Cython, Psyco, y tal).
 
 Por ejemplo, no se basan en la aplicación eficiente de CPython de en el lugar la concatenación de cadenas para los estados en la forma a + b = o a = a + b. Esta optimización es frágil, incluso en CPython (sólo funciona para algunos tipos) y no está presente en absoluto en las implementaciones que no utilizan refcounting. En las partes sensibles de rendimiento de la biblioteca, el '' .join () formulario debe ser utilizado en su lugar. Esto asegurará que la concatenación se produce en el tiempo lineal a través de diversas implementaciones. 
@@ -764,7 +781,4 @@ Las anotaciones de funciones observadas eran demasiado ad-hoc e incoherente para
 Notas al pie
 
 [5] Colgando sangría es un estilo de tipo entorno en el que todas las líneas de un párrafo excepto la primera línea. En el contexto de Python, el término se utiliza para describir un estilo donde el paréntesis de apertura de una instrucción entre paréntesis es el último no está en blanco de la línea, con líneas posteriores se sangría hasta el paréntesis de cierre.
-
-
-
 
