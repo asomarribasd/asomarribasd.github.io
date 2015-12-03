@@ -20,7 +20,9 @@ PIP es manejador de paquetes con una funcionalidad muy parecida a la que pueden 
 
 ### En Linux o en OS X:
 
+```shell
 pip install -U pip setuptools
+```
 
 ### En Windows:
 

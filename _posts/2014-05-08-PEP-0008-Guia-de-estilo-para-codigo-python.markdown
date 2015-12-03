@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Guía de estilo para codigo en Python"
+title:  "Guía de estilo para código en Python"
 date:   2014-05-08 19:56:14
-categories: [standard python]
-tags: [standard, python]
+categories: [standards, python]
+tags: [standards, python]
 ---
 
 ## Que es PEP 8?
 
-Pep es el acronimo en ingles de Propuestas de Mejora Python (Python Enhancement Proposals), existen muchos Peps,
-el PEP 8 en concreto es la propuesta del estandard de programación y buenas practicas. Es en general una guía para mejorar la legibilidad del código y hacerlo tan consistente como se pueda.
-Deberia estar entre las primeras lecturas de todo Pythonista profesional o aficionado. Esta propuesta data del 2001 y es por eso que se a convertido en casi una guía oficial.
+Pep es el acrónimo en ingles de "Propuestas de Mejora Python" (Python Enhancement Proposals), existen muchos Peps,
+el PEP 8 en concreto es la propuesta del estandard de programación y buenas practicas para el lenguaje. Es en general una guía para mejorar la legibilidad del código y hacerlo tan consistente como se pueda.
+Debería estar entre las primeras lecturas de todo Pythonista profesional o aficionado. Esta propuesta data del 2001 aunque se actualiza cuando es necesario y es por eso que se a convertido en casi una guía oficial.
 
 Si quieren conocer mas de estas propuestas de mejora las pueden encontrar en la documentación de Python (aqui)[https://www.python.org/dev/peps/]. 
 
@@ -22,11 +22,12 @@ En cuanto el standard (propuesta) PEP 8 lo pueden accesar directamente en ingles
 
 Este documento da convenciones de codificación para el código Python que comprende la biblioteca estándar en la distribución principal de Python. Por favor, consulte las guías de estilo de compañía informativos PEP que describe para el código C en la aplicación C de Python [1].
 
-Este documento y PEP 257 (Convenios docstring) fueron adaptadas de originales Guía de estilo de Python ensayo de Guido, con algunas adiciones de la guía de estilo de Barry [2].
+Este documento y el PEP 257 (Convenios docstring) fueron adaptadas del ensayo original de Guido sobre la Guía de estilo de Python, con algunas adiciones de la guía de estilo de Barry [2].
 
 Esta guía de estilo evoluciona con el tiempo como las convenciones adicionales se identifican y convenciones anteriores han quedado obsoletas por los cambios en el lenguaje mismo.
 
 Muchos proyectos tienen sus propias pautas de estilo de codificación. En caso de cualquier conflicto, estas guías específicas del proyecto tienen prioridad para ese proyecto.
+
 
 ##Una consistencia estúpida es el duende de las mentes pequeñas
 
