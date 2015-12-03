@@ -2,10 +2,9 @@
 layout: post
 title:  "Caso Saudi-Aramco!"
 date:   2015-11-13 16:00:00
-categories: [python, "software security"]
+categories: ["software security"]
 tags: [security ]
 ---
-
 
 Calificado como el mayor ataque perpetrado conocido a la fecha, ocupa esta posición no solo por el increíble número de máquinas afectadas, sino también por la afectación a las operaciones de la empresa y los costos a los que se tuvo que incurrir para poder re establecer las operaciones nuevamente, casi 6 meses después del ataque.
 
