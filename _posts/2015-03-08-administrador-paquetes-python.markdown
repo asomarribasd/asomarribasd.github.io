@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Instalacion de modulos en Python"
-date:   2015-05-08 19:56:14
+date:   2015-03-08 19:56:14
 categories: [standards, python]
 tags: [standards, python]
 ---
