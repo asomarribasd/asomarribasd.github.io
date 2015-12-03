@@ -18,23 +18,26 @@ Actualmente PIP es el manejador de instalaciones preferido de la comunidad.
 
 PIP es manejador de paquetes con una funcionalidad muy parecida a la que pueden conocer gem en ruby  o npm en Node. A partir de python 3.4 se encuentra incluido por defecto con el instalador de python, tanto para linux com windows y mac. (asumire que como iniciados tendran una version reciente.) Asi que solamene ocupamos actualizarlo.
 
-### En Linux o en OS X:
+#### En Linux o en OS X:
 
-```shell
+```
 pip install -U pip setuptools
 ```
 
-### En Windows:
+#### En Windows:
 
+```
 python -m pip install -U pip setuptools
+```
 
 ## Instalando wheel
 
 Talvez quieran aprovechar e install tambien Wheel, este es un formato de lo que traduciria como construccion distribuida, que basicamente permite pajar en "instalar" librerias, sin necesidad de que estas se compilen en el cliente. de manera que no se distribuye el codigo como tal, sino una libreria.
 Instalar weel es muy facil una vez que tienes pip.
 
+```
 pip install wheel
-
+```
 
 
 
