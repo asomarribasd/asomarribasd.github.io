@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Guía de estilo para código en Python"
-date:   2014-05-08 19:56:14
+title:  "Instalacion de modulos en Python"
+date:   2015-05-08 19:56:14
 categories: [standards, python]
 tags: [standards, python]
 ---
