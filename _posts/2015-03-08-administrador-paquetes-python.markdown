@@ -56,8 +56,8 @@ pip install 'NombreModulo>=1,<2'
 
 ## Instalando wheel
 
-Talvez quieran aprovechar e install tambien Wheel, este es un formato de lo que traduciria como construccion distribuida, que basicamente permite pajar en "instalar" librerias, sin necesidad de que estas se compilen en el cliente. de manera que no se distribuye el codigo como tal, sino una libreria.
-Instalar weel es muy facil una vez que tienes pip.
+Talvez quieran aprovechar e install tambien Wheel, este es un formato de lo que traduciria como construccion distribuida, que basicamente permite "instalar" librerias, sin necesidad de que estas se compilen en el cliente. de manera que no se distribuye el codigo como tal, sino una libreria.
+Instalar weel es muy facil una vez que tienes pip. Y su utilizacion a fondo la veremos en otro post.
 
 ```
 pip install wheel
