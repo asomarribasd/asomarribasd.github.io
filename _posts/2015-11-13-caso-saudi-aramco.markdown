@@ -6,7 +6,6 @@ categories: ["software security"]
 tags: [security ]
 ---
 
-
 Calificado como el mayor ataque perpetrado conocido a la fecha, ocupa esta posición no solo por el increíble número de máquinas afectadas, sino también por la afectación a las operaciones de la empresa y los costos a los que se tuvo que incurrir para poder re establecer las operaciones nuevamente, casi 6 meses después del ataque.
 
 El caso de Saudi Aramco es un caso complejo en todo sentido, empezando por el grupo que se adjudicaron el ataque. Se hicieron llamar “The Cutting Sword of Justice”. Indicando que el ataque se debió al apoyo y relación de la empresa con el régimen autoritario en Arabia Saudita. Existen las sospechas de parte de algunas entidades internacionales que el ataque pudo se promovido en realidad por Irán, como respuesta a un ataque anterior recibido por petroleras iraníes, esto por el el parecido en el código de ambos ataques. Una línea menor de pensamiento indica que ambos ataques podrían venir de un tercero interesado en desestabilizar el área, representado por Israel esta teoría se basa en el cogido que comparten Flame y Stuxnet y el primero a su vez con el usado para atacar Aramco.

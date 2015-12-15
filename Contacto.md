@@ -49,7 +49,7 @@ $(document).ready(function(){
 <div class="col-md-10">
 <h3> Tiene preguntas?</h3>
 <h5> Yo tengo respuestas (algunas)</h5> 
-<p>Necesita contactarme? Puede llenar el formulario y le contactare en menos de 24 horas!</p>
+<p>Necesita contactarme? O solo saludar :)! No dude en dejarme su mensaje!</p>
         <form name="sendForm" id="sendForm" method="post">
             <div class="row">
                 <div class="col-md-12">
