@@ -18,7 +18,7 @@ Actualmente PIP es el manejador de instalaciones preferido de la comunidad y es 
 
 ## Instalando el Administrador de paquetes PIP
 
-PIP es manejador de paquetes con una funcionalidad muy parecida a la que pueden conocer gem en ruby  o npm en Node. A partir de python 3.4 se encuentra incluido por defecto con el instalador de python, tanto para linux com windows y mac. (asumire que como iniciados tendran una version reciente.) Asi que solamene ocupamos actualizarlo.
+PIP es un manejador de paquetes con una funcionalidad muy parecida a la que pueden conocer gem en ruby  o npm en Node. A partir de python 3.4 se encuentra incluido por defecto con el instalador de python, tanto para linux com windows y mac. (asumire que como iniciados tendrán una version reciente.) Así que solamene ocupamos actualizarlo.
 
 #### En Linux o en OS X:
 

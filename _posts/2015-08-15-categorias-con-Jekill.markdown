@@ -9,7 +9,7 @@ tags: [jekyll, octopress]
 ## Clasificaciones en Jekyll
 
 Para la clasificaci&oacute;n y crear relaciones en tus blogs, Jekyll implementa dos metodologias similares en la forma de difinirlas pero diferentes en cuanto a sus caracteristicas.
-Estas son [categotirias] y [tags] las cuales se definen en la cabacera del Blog.
+Estas son [categorias] y [tags] las cuales se definen en la cabecera del Blog.
 
 ## Categorias en Jekyll
 

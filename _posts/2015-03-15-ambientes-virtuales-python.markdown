@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ambientes Virtuales en Python"
-date:   2015-03-15 19:56:14
+date:   2015-03-15 19:56:00
 categories: [python]
 tags: [python]
 ---
@@ -17,8 +17,11 @@ Basicamente lo que te permite es tener un "installation directory" diferente par
 
 ## Como crear un Ambiente Virtual
 
-Existen 2 ambientes virtualenv y pyenv. Basicamente virtualenv te soporta des la version 2.6 a la 3.4 de python, mietnras que pyenv te soporta la version 3.3 y 3.4 solamente.
+Vamos a ver dos de las opciones que tenemos para crear estos ambientes (que afectan solo tu ambiente de programacion de python) virtualenv y pyenv. Estas aunque buscan una meta final similar, esta es manejar modulos de diferentes versiones para cada proyecto, lo  hacen de maneras diferentes, por otro lado virtualenv te soporta des la version 2.6 a la 3.4 de python, mientras que pyenv te soporta la version 3.3 y 3.4 solamente.
 
+Pyenv  es una extension de bash por tanto uno de los inconvenientes es que no va a trabajar por defecto en Windows por ejemplo. Basicamente lo que hace es interceptar los llamados a python y pip y otras herramientas asociadas. De manera que puedes tener asociadas las librerias y la version de python a tu proyecto. 
+
+VirtualEnv, esta hecho en python puro de forma que deberia funcionar donde sea que python corra. Originalmente estaba mas dirigido al manejo de versiones de librerias que a las versiones de Python, permitian tener ambientes con diferentes librerias cargadas y cambiar de uno a otro segun la necesidad del proyecto. Es exelente para testing dado que nos permite ter un control de las librerias y las versiones de las mismas que se cargan, sin importar las versiones guardadas a nivel global.
 
 ### Utilizando virtualenv:
 
@@ -26,7 +29,7 @@ Existen 2 ambientes virtualenv y pyenv. Basicamente virtualenv te soporta des la
 virtualenv <DIR>
 source <DIR>/bin/activate
 ```
-Puedes encontrar los detalles de la interface [aqui](https://virtualenv.pypa.io/en/latest/userguide.html#usage)
+Puedes encontrar los detalles [aqui](https://virtualenv.pypa.io/en/latest/userguide.html#usage)
 
 ### Utilizando pyvenv:
 
@@ -35,4 +38,5 @@ pyvenv <DIR>
 source <DIR>/bin/activate
 ```
 
-Puedes encontrar los detalles de la interface [aqui](https://docs.python.org/3.4/library/venv.html)
+Puedes encontrar los detalles [aqui](https://docs.python.org/3.4/library/venv.html)
+
