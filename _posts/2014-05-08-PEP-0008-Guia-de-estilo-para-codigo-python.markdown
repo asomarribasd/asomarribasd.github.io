@@ -56,7 +56,8 @@ Las líneas de continuación deben alinearse elementos envueltos ya sea vertical
 
 Sí:
 
-```python
+{% highlight python %}
+
 # Alineado con delimitador de apertura. 
 Foo = long_function_name (var_one, var_two, 
                          var_three, var_four) 
@@ -71,11 +72,12 @@ Def long_function_name
 foo = long_function_name 
     (var_one, var_two, 
     var_three, var_four)
-```
+
+{% endhighlight %}
 
 No:
 
-```python
+``` python
 . # Argumentos en primera línea prohibida cuando no utilice la alineación vertical 
 foo = long_function_name (var_one, var_two, 
     var_three, var_four) 
