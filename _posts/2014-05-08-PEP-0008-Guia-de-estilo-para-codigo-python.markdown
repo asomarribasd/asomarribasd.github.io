@@ -29,33 +29,33 @@ Esta guía de estilo evoluciona con el tiempo como las convenciones adicionales 
 Muchos proyectos tienen sus propias pautas de estilo de codificación. En caso de cualquier conflicto, estas guías específicas del proyecto tienen prioridad para ese proyecto.
 
 
-##Una consistencia estúpida es el duende de las mentes pequeñas
+## Una consistencia estúpida es el duende de las mentes pequeñas
 
-Una de las ideas clave de Guido es que se lee el código mucho más a menudo de lo que está escrito. Las directrices proporcionadas aquí están destinadas a mejorar la legibilidad del código y hacer que sea coherente en toda la amplia gama de código Python. Como PEP 20 dice, "cuenta de legibilidad".
+Una de las ideas clave de Guido es que se lee el código mucho más a menudo de lo que está escrito. Las guias proporcionadas aquí están destinadas a mejorar la legibilidad del código y hacer que sea coherente atravez de la amplia gama de código Python. Como PEP 20 dice, "La legibilidad cuenta".
 
-Una guía de estilo es una cuestión de coherencia. Coherencia con esta guía de estilo es importante. La consistencia dentro de un proyecto es más importante. La consistencia dentro de un módulo o función es más importante.
+Una guía de estilo es una cuestión de consistencia. La consistencia con esta guía de estilo es importante. La consistencia dentro de un proyecto es más importante. La consistencia dentro de un módulo o función es más importante.
 
-Pero lo más importante: saber cuándo ser inconsistente - a veces el libro de estilo simplemente no se aplica. En caso de duda, utilice su mejor juicio. Mira otros ejemplos y decidir lo que se ve mejor. Y no dude en preguntar!
+Pero lo más importante: saber cuándo ser inconsistente - a veces el libro de estilo simplemente no se aplica. En caso de duda, utilice su mejor juicio. Mira otros ejemplos y decida lo que se ve mejor. Y no dude en preguntar!
 
-En particular: no romper la compatibilidad hacia atrás sólo para cumplir la presente PEP!
+En particular: no rompa la compatibilidad hacia atrás sólo para cumplir la presente PEP!
 
-Algunas otras buenas razones para ignorar una pauta particular:
+#### Algunas otras buenas razones para ignorar una pauta particular:
 
-Al aplicar la directriz haría el código menos legible, incluso para alguien que está acostumbrado a la lectura de código que sigue este PEP.
-Para ser coherente y la zona de código que también la rompe (tal vez por razones históricas) - aunque esto es también una oportunidad para limpiar el desorden de otra persona (al más puro estilo de XP).
-Debido a que el código en cuestión es anterior a la introducción de la guía y no hay otra razón para estar modificando ese código.
-Cuando el código tiene que ser compatible con versiones anteriores de Python que no soportan la función recomendada por la guía de estilo.
+1. Al aplicar la directriz haría el código menos legible, incluso para alguien que está acostumbrado a la lectura de código que sigue este PEP.
+2. Para ser coherente y la zona de código que también la rompe (tal vez por razones históricas) - aunque esto es también una oportunidad para limpiar el desorden de otra persona (al más puro estilo de XP).
+3. Debido a que el código en cuestión es anterior a la introducción de la guía y no hay otra razón para estar modificando ese código.
+4. Cuando el código tiene que ser compatible con versiones anteriores de Python que no soportan la función recomendada por la guía de estilo.
 
-##Código lay-out
+## Diseño del Código 
 
-###Sangría
+### Sangría
 
-Utilice 4 espacios por nivel de sangría.
+#### Utilice 4 espacios por nivel de sangría.
 
 Las líneas de continuación deben alinearse elementos envueltos ya sea vertical utilizando la línea implícita de Python unirse dentro de paréntesis, corchetes y llaves, o usando una sangría francesa [5]. Cuando se utiliza una sangría francesa las siguientes consideraciones deben aplicarse; no debe haber argumentos en la primera línea y más sangría deben ser utilizados para distinguir claramente a sí misma como una línea de continuación.
 
 Sí:
-
+```
 # Alineado con delimitador de apertura. 
 Foo = long_function_name (var_one, var_two, 
                          var_three, var_four) 
@@ -70,6 +70,7 @@ Def long_function_name
 foo = long_function_name 
     (var_one, var_two, 
     var_three, var_four)
+```
 No:
 
 . # Argumentos en primera línea prohibida cuando no utilice la alineación vertical 
