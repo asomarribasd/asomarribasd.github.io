@@ -18,7 +18,7 @@ En cuanto el standard (propuesta) PEP 8 lo pueden accesar directamente en ingles
 
 (Ultima Actualización a Octubre del 2015)
 
-##Introducción
+## Introducción
 
 Este documento da convenciones de codificación para el código Python que comprende la biblioteca estándar en la distribución principal de Python. Por favor, consulte las guías de estilo de compañía informativos PEP que describe para el código C en la aplicación C de Python [1].
 
@@ -29,7 +29,7 @@ Esta guía de estilo evoluciona con el tiempo como las convenciones adicionales 
 Muchos proyectos tienen sus propias pautas de estilo de codificación. En caso de cualquier conflicto, estas guías específicas del proyecto tienen prioridad para ese proyecto.
 
 
-## Una consistencia estúpida es el duende de las mentes pequeñas
+## Una mala consistencia es el duende de las mentes pequeñas
 
 Una de las ideas clave de Guido es que se lee el código mucho más a menudo de lo que está escrito. Las guias proporcionadas aquí están destinadas a mejorar la legibilidad del código y hacer que sea coherente atravez de la amplia gama de código Python. Como PEP 20 dice, "La legibilidad cuenta".
 
@@ -55,12 +55,13 @@ En particular: no rompa la compatibilidad hacia atrás sólo para cumplir la pre
 Las líneas de continuación deben alinearse elementos envueltos ya sea vertical utilizando la línea implícita de Python unirse dentro de paréntesis, corchetes y llaves, o usando una sangría francesa [5]. Cuando se utiliza una sangría francesa las siguientes consideraciones deben aplicarse; no debe haber argumentos en la primera línea y más sangría deben ser utilizados para distinguir claramente a sí misma como una línea de continuación.
 
 Sí:
-```
-### Alineado con delimitador de apertura. 
+
+```python
+# Alineado con delimitador de apertura. 
 Foo = long_function_name (var_one, var_two, 
                          var_three, var_four) 
 
-### Más sangría incluido para distinguir esta del resto. 
+# Más sangría incluido para distinguir esta del resto. 
 Def long_function_name 
         (var_one, var_two, var_three, 
         var_four): 
@@ -71,8 +72,10 @@ foo = long_function_name
     (var_one, var_two, 
     var_three, var_four)
 ```
+
 No:
 
+```python
 . # Argumentos en primera línea prohibida cuando no utilice la alineación vertical 
 foo = long_function_name (var_one, var_two, 
     var_three, var_four) 
@@ -82,6 +85,8 @@ Def long_function_name
     (var_one, var_two, var_three, 
     var_four): 
     print (var_one)
+```
+
 La regla 4-espacio es opcional para líneas de continuación.
 
 Opcional:
@@ -120,6 +125,7 @@ result = some_function_that_takes_arguments
     'f',)
 o puede ser alineado en el marco del primer carácter de la línea que comienza la construcción de varias líneas, como en:
 
+```
 my_list = 
     [1, 2, 3, 
     4, 5, 
@@ -128,8 +134,9 @@ result = some_function_that_takes_arguments
     ('a', 'b', 'c', 
     'd', 'e', 
 'f',)
+```
 
-###Tabuladores o espacios?
+### Tabuladores o espacios?
 
 Los espacios son el método preferido sangría.
 
