@@ -56,11 +56,11 @@ Las líneas de continuación deben alinearse elementos envueltos ya sea vertical
 
 Sí:
 ```
-# Alineado con delimitador de apertura. 
+### Alineado con delimitador de apertura. 
 Foo = long_function_name (var_one, var_two, 
                          var_three, var_four) 
 
-# Más sangría incluido para distinguir esta del resto. 
+### Más sangría incluido para distinguir esta del resto. 
 Def long_function_name 
         (var_one, var_two, var_three, 
         var_four): 
