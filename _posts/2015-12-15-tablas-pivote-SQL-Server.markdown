@@ -198,6 +198,10 @@ El resultado:
 |Tete Mensa-Annan	|NULL			|288368.6887	|1376371.1384	|943376.5484|
 |Tsvi Reiter		|1555332.8072	|2798718.4618	|2505390.5003	|1226631.9068|
 
+
+
 [Ejemplo en MSDN](https://technet.microsoft.com/en-us/library/ms177410(v=sql.105).aspx)
+[Otro Ejemplo](http://blogs.msdn.com/b/spike/archive/2009/03/03/pivot-tables-in-sql-server-a-simple-sample.aspx)
 
 Bueno ya saben. Experimentando se aprende!
+
