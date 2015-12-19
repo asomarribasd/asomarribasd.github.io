@@ -52,7 +52,87 @@ FOR
 
 ## Sobre los datos
 
-http://msftdbprodsamples.codeplex.com/
+Para Nuestro ejemplo utilizaremos solo dos tablas:
 
+'[AdventureWorks2012].[Sales].[SalesOrderHeader]'
+'Person.[Person]'
+
+#### Revisas la estructura y encuentras:
+
+
+{% highlight sql %}
+
+
+SELECT COLUMN_NAME, DATA_TYPE 
+FROM INFORMATION_SCHEMA.COLUMNS c
+WHERE c.TABLE_SCHEMA = 'Person' 
+	AND TABLE_NAME = 'Person'
+
+{% endhighlight %}
+
+BusinessEntityID	int
+PersonType	nchar
+NameStyle	bit
+Title	nvarchar
+FirstName	nvarchar
+MiddleName	nvarchar
+LastName	nvarchar
+Suffix	nvarchar
+EmailPromotion	int
+AdditionalContactInfo	xml
+Demographics	xml
+rowguid	uniqueidentifier
+ModifiedDate	datetime
+
+
+{% highlight sql %}
+
+SELECT COLUMN_NAME, DATA_TYPE 
+FROM INFORMATION_SCHEMA.COLUMNS c
+WHERE c.TABLE_SCHEMA = 'Sales' 
+	AND TABLE_NAME = 'SalesOrderHeader'
+
+{% endhighlight %}
+
+SalesOrderID	int
+RevisionNumber	tinyint
+OrderDate	datetime
+DueDate	datetime
+ShipDate	datetime
+Status	tinyint
+OnlineOrderFlag	bit
+SalesOrderNumber	nvarchar
+PurchaseOrderNumber	nvarchar
+AccountNumber	nvarchar
+CustomerID	int
+SalesPersonID	int
+TerritoryID	int
+BillToAddressID	int
+ShipToAddressID	int
+ShipMethodID	int
+CreditCardID	int
+CreditCardApprovalCode	varchar
+CurrencyRateID	int
+SubTotal	money
+TaxAmt	money
+Freight	money
+TotalDue	money
+Comment	nvarchar
+rowguid	uniqueidentifier
+ModifiedDate	datetime	
 
 ## Un Ejemplo
+
+Imaginense esto, estas tranquilamente tomando cafe cuando se te hacerca el gerente de ventas y te comenta que quiere conocer cuanto venden sus vendedores anualmente, te quedas pensa, para que carajos quiere esto y pues bueno como no te da trabajo le dice que si que con gusto le envias las ventas. Vas a tu escritorio y haces algo como esto (Y si lo haces en produccion te traes abajo el servidor)
+
+{% highlight sql %}
+
+SELECT P.FirstName + ' ' + P.LastName AS [Vendedor], 
+		year(OrderDate) AS 'year', 
+		[TotalDue] as [TotalVentas]
+FROM	[AdventureWorks2012].[Sales].[SalesOrderHeader] Sales 
+		INNER JOIN Person.[Person] P 
+		ON P.BusinessEntityID = Sales.SalesPersonID
+
+{% endhighlight %}
+
