@@ -77,7 +77,8 @@ foo = long_function_name
 
 No:
 
-``` python
+{% highlight python %}
+
 . # Argumentos en primera línea prohibida cuando no utilice la alineación vertical 
 foo = long_function_name (var_one, var_two, 
     var_three, var_four) 
@@ -87,17 +88,26 @@ Def long_function_name
     (var_one, var_two, var_three, 
     var_four): 
     print (var_one)
-```
 
-La regla 4-espacio es opcional para líneas de continuación.
+{% endhighlight %}
+
+#### La regla 4-espacio es opcional para líneas de continuación.
 
 Opcional:
 
-Guiones # Colgadas * * pueden tener una sangría a otra de 4 espacios. 
+{% highlight python %}
+
+# Sangrias internas * pueden * tener una sangría diferente de 4 espacios. 
+
 Foo = long_function_name 
   (var_one, var_two, 
   var_three, var_four)
+
+{% endhighlight %}
+
 Cuando la parte condicional de un caso -statement es lo suficientemente largo para requerir que se escriba a través de múltiples líneas, vale la pena señalar que la combinación de una palabra clave de dos caracteres (es decir, si), además de un espacio único, además de un paréntesis de apertura crea un entorno natural guión 4-espacio para las líneas subsiguientes de la condicional de varias líneas. Esto puede producir un conflicto visual con la suite con sangría de código anidado dentro del si -statement, que también, naturalmente, ser una sangría de 4 espacios. Este PEP no toma posición explícita sobre cómo (o si) para más distinguir visualmente tales líneas condicionales de la suite anidado dentro del si -statement. Opciones aceptables en esta situación incluyen, pero no se limitan a:
+
+{% highlight python %}
 
 # Sin sangría adicional. 
 Si (this_is_one_thing y 
@@ -115,7 +125,12 @@ Si (this_is_one_thing y
 si (this_is_one_thing 
         y that_is_another_thing): 
     hacer_algo ()
+
+{% endhighlight %}
+
 La llave de cierre / soporte / paréntesis sobre varias líneas construye o bien puede alinearse bajo el primero no está en blanco de la última línea de la lista, como en:
+
+{% highlight python %}
 
 my_list = 
     [1, 2, 3, 
@@ -125,9 +140,14 @@ result = some_function_that_takes_arguments
     ('a', 'b', 'c', 
     'd', 'e', 
     'f',)
-o puede ser alineado en el marco del primer carácter de la línea que comienza la construcción de varias líneas, como en:
 
-```
+{% endhighlight %}
+
+o puede ser alineado en el marco del primer carácter de la línea que comienza la construcción de 
+varias líneas, como en:
+
+{% highlight python %}
+
 my_list = 
     [1, 2, 3, 
     4, 5, 
@@ -136,9 +156,10 @@ result = some_function_that_takes_arguments
     ('a', 'b', 'c', 
     'd', 'e', 
 'f',)
-```
 
-### Tabuladores o espacios?
+{% endhighlight %}
+
+### Tabulaciones o espacios?
 
 Los espacios son el método preferido sangría.
 
@@ -150,7 +171,7 @@ Python 2 código de sangría con una mezcla de tabuladores y espacios se debe co
 
 Cuando se invoca la línea de comando intérprete de Python 2 con la -t opción, emite advertencias sobre código que mezcla ilegalmente tabulaciones y espacios. Al usar -tt estas advertencias se convierten en errores. Estas opciones son muy recomendables! 
 
-###Máxima longitud de línea
+### Máxima longitud de línea
 
 Limite todas las líneas hasta un máximo de 79 caracteres.
 
@@ -177,6 +198,8 @@ Otro de estos casos es con assert declaraciones.
 
 Asegúrese de sangrar la línea continua adecuada. El lugar preferido para romper alrededor de un operador binario es después de que el operador, no antes. Algunos ejemplos:
 
+{% highlight python %}
+
 clase Rectangle (Blob): 
 
     def __init __ (self, anchura, altura, 
@@ -191,7 +214,10 @@ clase Rectangle (Blob):
                              (ancho, alto)) 
         Blob .__ init __ (self, anchura, altura, 
                       color, énfasis, resalte)
-###Líneas en blanco
+
+{% endhighlight %}
+
+### Líneas en blanco
 
 Rodean la definición de funciones y de clase de nivel superior con dos líneas en blanco.
 
@@ -203,7 +229,7 @@ Use líneas en blanco en funciones, con moderación, para indicar secciones lóg
 
 Python acepta el control-L (es decir, ^ L) Forma carácter de avance como espacios en blanco; Muchas herramientas tratan a estos personajes como página separadores, por lo que puede utilizarlos para separar las páginas de las secciones correspondientes de su archivo. Nota, algunos editores y los espectadores de códigos basados ​​en la web pueden no reconocer el control-L como un avance de página y se mostrarán otra glifo en su lugar.
 
-###Codificación Fuente Archivo
+### Codificación de Archivo Fuente
 
 Código en la distribución de Python central siempre debe utilizar UTF-8 (o ASCII en Python 2).
 
@@ -215,14 +241,18 @@ Para Python 3.0 y más allá, la siguiente política se prescribe para la biblio
 
 Se anima a los proyectos de código abierto con una audiencia global a adoptar una política similar.
 
-###Importaciones
+### Importar modulos
 
 Importaciones por lo general deben estar en líneas separadas, por ejemplo:
 
-Sí: importación os 
+Sí: 
+
+import os 
      import sys 
 
-No: import sys, os
+No: 
+
+import sys, os
 Está bien decir esto, sin embargo:
 
 de importación subproceso Popen, PIPE
@@ -270,9 +300,9 @@ En Python, solamente una comilla y cadenas entre comillas dobles son los mismos.
 
 Para cadenas de triple citado, utilice siempre comillas dobles para ser coherente con la convención docstring en PEP 257.
 
-##Los espacios en blanco en las expresiones y declaraciones
+## Los espacios en blanco en expresiones y declaraciones
 
-###Peeves mascotas
+### Peeves mascotas
 
 Evitar los espacios en blanco ajenos en las siguientes situaciones:
 
