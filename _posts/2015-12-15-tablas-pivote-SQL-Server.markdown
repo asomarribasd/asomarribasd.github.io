@@ -174,7 +174,8 @@ PIVOT (
 
 {% endhighlight %}
 
-El resultado
+El resultado:
+
 |Vendedor|2005|2006|2007|2008|
 |Amy Alberts|NULL|97271.0569|617725.2728|111421.137|
 |David Campbell|570467.7098|1327676.9362|1549495.7049|760254.2516|
