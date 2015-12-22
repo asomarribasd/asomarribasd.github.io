@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tablas Pivote en tus querys con SQL!"
+title:  "Tablas Pivote en tus querys con MSSQL"
 date:   2015-12-17 18:00:00
 categories: ["MSSQL"]
 tags: [MSSQL, "Data Science"]
