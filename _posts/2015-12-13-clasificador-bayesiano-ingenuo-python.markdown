@@ -55,15 +55,22 @@ Adicionalmente si estan en Ubuntu/Debian como en mi caso pueden utilizar:
 
 "sudo apt-get install python-reverend"
 
-Lamentablemente al momento de escribir este blog esa libreria no esta actualizada para python 3, pero que no "cunda el panico", le aplique unos quick fixes y pueden bajarlo de mi [Github] (https://github.com/asomarribasd/python/tree/master/modules), en tanto la libreria es actualizada oficialmente.
+Lamentablemente al momento de escribir este blog esa libreria no esta actualizada para python 3, pero que no "cunda el panico", le aplique unos quick fixes y pueden bajarlo de mi [Github](https://github.com/asomarribasd/python/tree/master/modules), en tanto la libreria es actualizada oficialmente.
+
+Me encontre en un sitio del autor el script con correcciones, aunque no lo probe, visualmente parece estar corregido:
+[Correcciones](http://nullege.com/codes/show/src@d@i@divmod.org-HEAD@Reverend@reverend@ui@trainer.py/144/reverend.thomas.Bayes)
+Tambien tiene correcciones en mi GitHub:
+[Correcciones](https://github.com/asomarribasd/python/tree/master/modules)
 
 ### Veamos un ejemplo
 
-Como ejemplo vamos a tomar las caracteristicas de varias frutas y vamos a alimentar nuestro calsificador. Basicamente lo que vamos a hacer es darle el nombre de la fruta y algunas de sus caracteristicas. 
+Como ejemplo vamos a tomar las caracteristicas de varias frutas y vamos a alimentar nuestro calsificador. Basicamente lo que vamos a hacer es darle el nombre de la fruta y algunas de las caracteristicas asociadas caracteristicas. 
 
 #### Entrenamiento
 
 Noten en el script de alimentacion que una fruta puede agregarse mas de una vez para agregar nuevas caracteristicas sin que las que ya habian sido ingresadas se pierdan.
+
+Para entrenar el modulo se usa la funcion "train" de igual manera si se quiere que olvide alguna caracteristica, se llama la funcion "untrain" y envez de agregar la caractetistica buscara eliminarla.
 
 {% highlight python %}
 
@@ -92,21 +99,23 @@ guesser.save('my_guesser.bay')
 
 #### Pruebas
 
+La forma basica de hacer una prueba es sencillo, solo tienes que llamar la funcion guess y enviar el dato o datos que tienes, en este caso, nuestras caracteristicas de la fruta. Y el modulo te respondera la probabilidad de que sea una fruta u otra segun los datos datos.
 
 {% highlight python %}
 
 print(guesser.guess('tropical'))
 # Responde [('mango', 0.9999)]
+# Solo existe una fruta con esa caracteristica, asi que es muy probable que sea esa.
 
 print(guesser.guess('naranja dulce'))
-```
+
 # Responde 
 # [('mango', 0.08705626048239273), 
-('manzana', 0.03105590062111796), 
-('naranja', 0.11704341760678144), 
-('sandia', 0.03105590062111796), 
-('uva', 0.06849315068493156)]
-```
+# ('manzana', 0.03105590062111796), 
+# ('naranja', 0.11704341760678144), 
+# ('sandia', 0.03105590062111796), 
+# ('uva', 0.06849315068493156)]
+
 
 {% endhighlight %}
 
