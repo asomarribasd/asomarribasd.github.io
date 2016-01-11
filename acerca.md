@@ -1,6 +1,6 @@
 ---
-layout: page
-title: "Acerca de mi"
+layout: profile
+title: "Profile"
 permalink: /acercade/
 ---
 
