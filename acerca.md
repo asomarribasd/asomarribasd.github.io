@@ -4,6 +4,7 @@ title: "Acerca de mi"
 permalink: /acercade/
 ---
 
+<!--
 <div class="row">
 	<div class="col-md-8">
 		Creativo y proactivo, con mas de 15 a&nacute;os de experiencia en Desarrollo de aplicaciones y Tecnologia en general.
@@ -32,7 +33,7 @@ permalink: /acercade/
 	
 	</div>
 </div>
-
+-->
 
 <div class="container">
       <div class="row">
@@ -43,7 +44,7 @@ permalink: /acercade/
               <img src="//www.gravatar.com/avatar/9acdb04e603c1cac2b893190f6dd5911?s=200&amp;r=pg&amp;d=mm" alt="avatar">
             </div>
             <div id="text-header">
-              <h1>Ahmed Somarribas<br><span>Programmer</span></h1>
+              <h1>Ahmed Somarribas<br><span>Software Developer and Architect</span></h1>
             </div>
           </div>
         </div>
@@ -236,20 +237,28 @@ permalink: /acercade/
             <h2><i class="fa fa-heart ico"></i> Interests</h2>
             <div class="interests clearfix">
               <div class="item-interests">
-                  Wildlife
+                  Economics
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class="interest badge">Ferrets</span>
-                <span class="interest badge">Unicorns</span>
+                <span class="interest badge">Spread Knowleadge</span>
+                <span class="interest badge"></span>
               </div>
             </div>
           </div>
           <div class="box">
             <h2><i class="fa fa-check-square ico"></i> References</h2>
             <blockquote>
-              <div>It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</div>
+              <div>Excellent at what he does, he is a passionate programmer and a great Leader</div>
               <footer>
-                <a href="" target="_blank">Eduardo</a>
+                <a href="" target="_blank">Eduardo Gonzales</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>Ahmed is a great developer always searching to learn new things. His energy is contagious and pushes others to reach a common object. 
+<br><br>
+I am sure he will do his job in an excellent way. Good luck my friend!</div>
+              <footer>
+                <a href="" target="_blank">Byron Quesada</a>
               </footer>
             </blockquote><br>
           </div>
