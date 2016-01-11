@@ -2,7 +2,7 @@
 layout: post
 title:  "Como usar Bower con Rails!"
 date:   2015-06-01 14:44:00
-categories: [rails]
+categories: [rails, node]
 tags: [ruby, rails, bower, node]
 ---
 
@@ -12,9 +12,9 @@ tags: [ruby, rails, bower, node]
 En el raro que caso de que aun no se los mencionen, Bower es lo que llamariamos un administrador de paquetes/recursos web, entre ellos css, javascript en inclusive html.
 Creado por nuestros buenos amigos de Twitter. Pero por que usar, en que nos puede ayudar?
 
-Si ya estan familiarizados con Rails y la forma de agregar gemas a tu proyecto y luego ejecutar "bundle install" para que dichas gemas sean bajadas del repositorio, sabran lo util que es para evitar guardar los componentes de terceros en tu repositorio, asi como actualizarlos o instalar nuevos.
+Si ya estan familiarizados con Rails y la forma de agregar gemas a tu proyecto y luego ejecutar "bundle install" para que dichas gemas sean bajadas del repositorio, sabran lo util que es para evitar guardar los componentes de terceros en tu repositorio, asi como actualizarlos o instalar nuevos y manejar versiones diferentes para cada proyecto.
 
-Pero que pasa cuando lo que cambia de version es Bootstrap, Angular, ember o algun otro recurso? Es cierto existen muchos de estos recursos para los cuales han creado gemas, pero la version de la gema es diferente de la version del recurso y al final terminas investigando mas de lo que quisieras solo para saber que version de la gema ocupas.
+Pero que pasa cuando lo que cambia de version es Bootstrap, Angular, ember o algun otro recurso? Inicialmente se ideo encapsular esos recursos en gemas y es cierto existen muchos de estos recursos para los cuales han creado gemas, pero la version de la gema es diferente de la version del recurso y al final terminas investigando mas de lo que quisieras solo para saber que version de la gema ocupas para obtener la version de tu recurso buscado. Por otro lado esas gemas no se crean solas, asi que tienes que esperar a que equipo/persona que crea la gema la actualice y eso no siempre pasa tan  rapido como lo deseas.
 
 Bower viene a solucionar esos dolores de cabeza de una manera muy simple y con una consola que te permite administrar todas las tareas de tus recursos. De una forma muy similar a como lo haces con tus gemas.
 Vale la pena darle una oportunidad.
