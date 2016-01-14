@@ -1,6 +1,6 @@
 ---
 layout: profile
-title: "Profile"
+title: "Perfil"
 permalink: /acercade/
 ---
 
@@ -133,7 +133,39 @@ permalink: /acercade/
             <h2><i class="fa fa-university ico"></i> Education</h2>
             <ul id="education" class="clearfix">
               <li>
-                <div class="year pull-left">1997 2001</div>
+                <div class="year pull-left">1997 - 2001</div>
+                <div class="description pull-right">
+                  <h3>ULACIT</h3>
+                  <p><i class="fa fa-graduation-cap ico"></i> Bachelor</p>
+                  <p>Information Technology</p>
+                  <p>
+                    GPA: 4.0
+                  </p>
+                    <div>Courses</div>
+                    <ul class="list-group">
+                      <li class="list-group-item">DB1101 - Basic SQL</li>
+                      <li class="list-group-item">CS2011 - Java Introduction</li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">1997 - 2001</div>
+                <div class="description pull-right">
+                  <h3>ULACIT</h3>
+                  <p><i class="fa fa-graduation-cap ico"></i> Bachelor</p>
+                  <p>Information Technology</p>
+                  <p>
+                    GPA: 4.0
+                  </p>
+                    <div>Courses</div>
+                    <ul class="list-group">
+                      <li class="list-group-item">DB1101 - Basic SQL</li>
+                      <li class="list-group-item">CS2011 - Java Introduction</li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">1997 - 2001</div>
                 <div class="description pull-right">
                   <h3>ULACIT</h3>
                   <p><i class="fa fa-graduation-cap ico"></i> Bachelor</p>
