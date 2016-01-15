@@ -10,7 +10,8 @@ permalink: /acercade/
           <div id="photo-header" class="text-center">
             <!-- PHOTO (AVATAR) -->
             <div id="photo">
-              <img src="//www.gravatar.com/avatar/9acdb04e603c1cac2b893190f6dd5911?s=200&amp;r=pg&amp;d=mm" alt="avatar">
+            <!-- //www.gravatar.com/avatar/9acdb04e603c1cac2b893190f6dd5911?s=200&amp;r=pg&amp;d=mm -->
+              <img src="../images/AhmedSomarribas.jpg" alt="avatar">
             </div>
             <div id="text-header">
               <h1>Ahmed Somarribas<br><span>Software Developer and Architect</span></h1>
@@ -23,7 +24,7 @@ permalink: /acercade/
           <!-- ABOUT ME -->
           <div class="box">
             <h2><i class="fa fa-user ico"></i> About</h2>
-            <p>Something about Ahmed, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p>
+            <p>An accomplished Senior Software Engineer and Architect specializing in Object-Oriented Design and Analysis with extensive experience in the full life cycle of the software design process including requirements definition, design, interface implementation, proof of concept, prototyping, and development in several languages, testing, and maintenance.</p>
           </div>
           <!-- WORK EXPERIENCE -->
           <div class="box">
@@ -123,7 +124,7 @@ permalink: /acercade/
               <div class="description pull-right"><a href="https://twitter.com/AhmedSomarribas" target="_blank">AhmedSomarribas</a></div>
             </div>
             <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-soundcloud fa-fw"></span></div>
+              <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
               <div class="title pull-right">GitHub</div>
               <div class="description pull-right"><a href="https://github.com/asomarribasd" target="_blank">asomarribasd</a></div>
             </div>
