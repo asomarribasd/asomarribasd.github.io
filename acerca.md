@@ -4,7 +4,7 @@ title: "Perfil"
 permalink: /acercade/
 ---
 
-<div class="container">
+<div class="container container-body">
       <div class="row">
         <div class="col-xs-12">
           <div id="photo-header" class="text-center">
@@ -165,18 +165,15 @@ permalink: /acercade/
                 </div>
               </li>
               <li>
-                <div class="year pull-left">1997 - 2001</div>
+                <div class="year pull-left">1999</div>
                 <div class="description pull-right">
-                  <h3>ULACIT</h3>
-                  <p><i class="fa fa-graduation-cap ico"></i> Bachelor</p>
-                  <p>Information Technology</p>
-                  <p>
-                    GPA: 4.0
-                  </p>
+                  <h3>Desarrollos Empresariales</h3>
+                  <p><i class="fa fa-graduation-cap ico"></i> Database Expert</p>
+                  <p></p>
                     <div>Courses</div>
                     <ul class="list-group">
-                      <li class="list-group-item">DB1101 - Basic SQL</li>
-                      <li class="list-group-item">CS2011 - Java Introduction</li>
+                      <li class="list-group-item">SQL Server Administration</li>
+                      <li class="list-group-item">Oracle Fundations</li>
                     </ul>
                 </div>
               </li>
