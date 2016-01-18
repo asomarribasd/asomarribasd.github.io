@@ -11,7 +11,8 @@ permalink: /acercade/
             <!-- PHOTO (AVATAR) -->
             <div id="photo">
             <!-- //www.gravatar.com/avatar/9acdb04e603c1cac2b893190f6dd5911?s=200&amp;r=pg&amp;d=mm -->
-              <img src="../images/AhmedSomarribas.jpg" alt="avatar">
+              <img src="../images/AhmedSomarribas.jpg" alt="avatar" onmouseover="this.src='../images/SlothFace.png';"
+              onmouseout="this.src='../images/AhmedSomarribas.jpg';">
             </div>
             <div id="text-header">
               <h1>Ahmed Somarribas<br><span>Software Developer and Architect</span></h1>
