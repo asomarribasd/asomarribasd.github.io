@@ -41,14 +41,14 @@ permalink: /acercade/
                 </div>
                 <div class="row">
                   <div class="job-details col-xs-11">
-                    <div class="profession">CEO/President</div>
+                    <div class="profession">Vice President</div>
                     <div class="description">
-                      Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.
+                      IASA is an Academic Organization. It is formally knowa as International Association for Software Architects. The association is committed to to improving the quality of the IT architecture industry by developing and delivering standards, education programs and developing accreditation programs and services that optimize the development of the architecture profession.  
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
-                        <li class="list-group-item">Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
-                        <li class="list-group-item">Successfully won Techcrunch Disrupt</li>
-                        <li class="list-group-item">Optimized an algorithm that holds the current world record for Weisman Scores</li>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
                       </ul>
                     </div>
                   </div>
@@ -56,6 +56,7 @@ permalink: /acercade/
               </div>
           </div>
           <!-- AWARDS -->
+          <!--
           <div class="box">
             <h2><i class="fa fa-certificate ico"></i> Awards</h2>
             <ul id="awards" class="clearfix">
@@ -68,7 +69,7 @@ permalink: /acercade/
                 </div>
               </li>
             </ul>
-          </div>
+          </div>-->
           <!-- VOLUNTEER -->
           <div class="box">
             <h2><i class="fa fa-group ico"></i> Volunteer</h2>
@@ -77,16 +78,15 @@ permalink: /acercade/
                   <div class="details">
                     <div class="where">CoderDojo</div>
                     <div class="address">
-                      <a href="http://coderdojo.com/" target="_blank"><i class="fa fa-globe ico"></i> http://coderdojo.com/</a>
+                      <a href="http://.com/" target="_blank"><i class="fa fa-globe ico"></i> http://.com/</a>
                     </div>
-                    <div class="year">January 2012 – January 2013</div>
+                    <div class="year">From - TO</div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-xs-11 pull-right">
                     <div class="profession">Teacher</div>
-                    <div class="description">
-                      Global movement of free coding clubs for young people.
+                    <div class="description">Global movement .
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
                         <li class="list-group-item">Awarded 'Teacher of the Month'</li>
@@ -134,19 +134,19 @@ permalink: /acercade/
             <h2><i class="fa fa-university ico"></i> Education</h2>
             <ul id="education" class="clearfix">
               <li>
-                <div class="year pull-left">1997 - 2001</div>
+                <div class="year pull-left">2015 - 2016</div>
                 <div class="description pull-right">
                   <h3>ULACIT</h3>
                   <p><i class="fa fa-graduation-cap ico"></i> Bachelor</p>
                   <p>Information Technology</p>
-                  <p>
+                  <!--<p>
                     GPA: 4.0
                   </p>
                     <div>Courses</div>
                     <ul class="list-group">
                       <li class="list-group-item">DB1101 - Basic SQL</li>
                       <li class="list-group-item">CS2011 - Java Introduction</li>
-                    </ul>
+                    </ul>-->
                 </div>
               </li>
               <li>
@@ -155,14 +155,6 @@ permalink: /acercade/
                   <h3>ULACIT</h3>
                   <p><i class="fa fa-graduation-cap ico"></i> Bachelor</p>
                   <p>Information Technology</p>
-                  <p>
-                    GPA: 4.0
-                  </p>
-                    <div>Courses</div>
-                    <ul class="list-group">
-                      <li class="list-group-item">DB1101 - Basic SQL</li>
-                      <li class="list-group-item">CS2011 - Java Introduction</li>
-                    </ul>
                 </div>
               </li>
               <li>
@@ -197,16 +189,18 @@ permalink: /acercade/
             <div class="skills clearfix">
               <div class="item-skills">
                   Databases
-                  <span class="skill-level">Master</span>
+                  <span class="skill-level">Proficient Developer</span>
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
                 <span class="skill badge">MS SQL</span>
+                <span class="skill badge">Postgre</span>
                 <span class="skill badge">Mongo</span>
                 <span class="skill badge">Redis</span>
               </div>
             </div>
           </div>
           <!-- PUBLICATIONS -->
+          <!--
           <div class="box">
             <h2><i class="fa fa-book ico"></i> Publications</h2>
             <div class="publication panel panel-default">
@@ -223,6 +217,7 @@ permalink: /acercade/
               </div>
             </div>
           </div>
+          -->
           <!-- LANGUAGES -->
           <div class="box">
             <h2><i class="fa fa-language ico"></i> Languages</h2>
@@ -236,7 +231,7 @@ permalink: /acercade/
             <h2><i class="fa fa-heart ico"></i> Interests</h2>
             <div class="interests clearfix">
               <div class="item-interests">
-                  Economics
+                  Economic Empowerment, Environment, Science and Technology
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
                 <span class="interest badge">Spread Knowleadge</span>
