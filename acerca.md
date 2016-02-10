@@ -228,26 +228,26 @@ permalink: /acercade/
                   <div class="job-details col-xs-11">
                     <div class="profession">Software Engineer</div>
                     <div class="description">
-                      - Design and Programming of Company's Intranet for:
-                          Manage Clients accounts information.
-                          Manage process of report deposits Account.
-                          Manage process of withdraw money from Accounts
-                          Fraud detection. Several processors integration
-                      - Basic Network support
-                          DNS - DHCP - Proxy servers - ISA - DC - Active Directory
-                      - SQL 2000 - 2005 Server Administration
-                          Database Backup and Recovery Plans
-                          Database High Availability
-                      - Database programming
-                          Sql Server Scripts
-                          Stored procedures
-                      - ASI Betting Software changes
-                          Web development of front end pages. asp, asp .net
-                          Creation and maintenance of marketing websites.
-                          Programming of Affiliates Website
-                      - Python, MySql
-                        Transforming and moving data over text files.
-                        Parse Information, insert to databases. 
+                      - Design and Programming of Company's Intranet for:<br>
+                      &#9;    Manage Clients accounts information.<br>
+                      &#9;    Manage process of report deposits Account.<br>
+                      &#9;    Manage process of withdraw money from Accounts<br>
+                      &#9;    Fraud detection. Several processors integration<br>
+                      - Basic Network support<br>
+                      &#9;    DNS - DHCP - Proxy servers - ISA - DC - Active Directory<br>
+                      - SQL 2000 - 2005 Server Administration<br>
+                      &#9;    Database Backup and Recovery Plans<br>
+                      &#9;    Database High Availability<br>
+                      - Database programming<br>
+                      &#9;    Sql Server Scripts<br>
+                      &#9;    Stored procedures<br>
+                      - ASI Betting Software changes<br>
+                      &#9;    Web development of front end pages. asp, asp .net<br>
+                      &#9;    Creation and maintenance of marketing websites.<br>
+                      &#9;    Programming of Affiliates Website<br>
+                      - Python, MySql<br>
+                      &#9;  Transforming and moving data over text files.<br>
+                      &#9;  Parse Information, insert to databases. <br>
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
                         <li class="list-group-item"></li>
@@ -275,7 +275,7 @@ permalink: /acercade/
             </ul>
           </div>-->
           <!-- VOLUNTEER -->
-          <div class="box">
+          <!--<div class="box">
             <h2><i class="fa fa-group ico"></i> Volunteer</h2>
               <div class="job clearfix">
                 <div class="row">
@@ -300,7 +300,7 @@ permalink: /acercade/
                 </div>
               </div>
           </div>
-        </div>
+        </div>-->
         <div class="col-xs-12 col-sm-5">
           <!-- CONTACT -->
           <div class="box clearfix">
@@ -354,6 +354,14 @@ permalink: /acercade/
                 </div>
               </li>
               <li>
+                <div class="year pull-left">2015</div>
+                <div class="description pull-right">
+                  <h3>Brightstar</h3>
+                  <p><i class="fa fa-graduation-cap ico"></i>Training</p>
+                  <p>Oracle database developer</p>
+                </div>
+              </li>
+              <li>
                 <div class="year pull-left">1997 - 2001</div>
                 <div class="description pull-right">
                   <h3>ULACIT</h3>
@@ -381,13 +389,13 @@ permalink: /acercade/
             <h2><i class="fa fa-tasks ico"></i> Skills</h2>
             <div class="skills clearfix">
               <div class="item-skills">
-                  Web Development
+                  .Net Full Stack Development
                   <span class="skill-level">Master</span>
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class="skill badge">HTML</span>
-                <span class="skill badge">CSS</span>
-                <span class="skill badge">Javascript</span>
+                <span class="skill badge">C#</span>
+                <span class="skill badge">HTML / CSS</span>
+                <span class="skill badge">TypeScript / Javascript</span>
               </div>
             </div>
             <div class="skills clearfix">
