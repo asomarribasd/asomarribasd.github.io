@@ -299,8 +299,8 @@ permalink: /acercade/
                   </div>
                 </div>
               </div>
-          </div>
-        </div>-->
+          </div>-->
+        </div>
         <div class="col-xs-12 col-sm-5">
           <!-- CONTACT -->
           <div class="box clearfix">
