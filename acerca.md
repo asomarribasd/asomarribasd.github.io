@@ -35,7 +35,7 @@ permalink: /acercade/
                   <div class="details">
                     <div class="where">IASA Global</div>
                     <div class="address">
-                      <a href="http://piedpiper.com" target="_blank"><i class="fa fa-globe ico"></i> http://www.iasaglobal.com</a>
+                      <a href="http://www.iasaglobal.com" target="_blank"><i class="fa fa-globe ico"></i> http://www.iasaglobal.com</a>
                     </div>
                     <div class="year">Julio 2014 – Present</div>
                   </div>
@@ -45,6 +45,209 @@ permalink: /acercade/
                     <div class="profession">Vice President</div>
                     <div class="description">
                       IASA is an Academic Organization. It is formally knowa as International Association for Software Architects. The association is committed to to improving the quality of the IT architecture industry by developing and delivering standards, education programs and developing accreditation programs and services that optimize the development of the architecture profession.  
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Brightstar Corp.</div>
+                    <div class="address">
+                      <a href="http://www.brightstar.com" target="_blank"><i class="fa fa-globe ico"></i> http://www.brightstar.com/</a>
+                    </div>
+                    <div class="year">Agosto 2014 – Present</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">
+                    Senior Software Developer - Biztalk Integrations</div>
+                    <div class="description">
+                      •The Sr. Integrations Developer is responsible for implementation, management, development and monitoring of Brightstar's data integrations. 
+                      •Work in collaboration with others under time constraints to design and build new interfaces for systems identified as enterprise and customer facing applications in order to comply with Brightstar's Global objectives. 
+                      Responsibilities 
+                      •Develop and implement IT integration solutions which meet the client's business requirements. 
+                      •Gathering message specifications from source and target systems technical contacts and create corresponding BizTalk schemas. 
+                      •Develop mapping requirements and corresponding BizTalk maps. 
+                      •Gather transport requirements. 
+                      •Develop, test and deploy solutions in BizTalk \​ C#. 
+                      •Contributing to the guidance of internal, corporate and external consulting teams and driving the solution requirements. 
+                      •Contribute to the regional development requirements as they relate to the Global ERP project for all internal and external customer facing systems (primarily BizTalk). 
+                      •Provide support and training to Brightstar employees, where necessary, as well as troubleshoot issues. 
+                      •Take steps to install, configure and operate contingency software applications. 
+                      •Ensure product range responsibilities meet client, local, regional and global requirements for operation in general.
+                      •Azure Services 
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Intertec International</div>
+                    <div class="address">
+                      <a href="http://intertecintl.com/" target="_blank"><i class="fa fa-globe ico"></i> http://intertecintl.com/</a>
+                    </div>
+                    <div class="year">August 2013 – July 2014</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Senior Software Engineer</div>
+                    <div class="description">
+                      Senior Software Engineer for Scentsy Inc.
+                      - Learn Azure environment
+                      - Development of Scented cards design Interface. Very dinamic tool.
+                      JavaScript, Backbone, Marionette, Knockout, Foundation, Jquery.
+                      C# .Net, Web API, Web Services.
+                      Visual Studio 2012, Ruby, NodeJS, SQL Server, Mongo
+                      - HTML5/CSS3
+                      - SQL SSIS/DTS
+                      - XML, XSD, XSLT
+                      - Agile/SCRUM
+                      - Architecture team
+                      - Social Responsability - Project's Coordination
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Avantica Technologies</div>
+                    <div class="address">
+                      <a href="http://www.avantica.net" target="_blank"><i class="fa fa-globe ico"></i> http://www.avantica.net</a>
+                    </div>
+                    <div class="year">Mayo 2012 – Julio 2013</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Software Engineer</div>
+                    <div class="description">
+                        Developer/Analyst for Rent A CIO 
+                         Integrations of servers with QuickBooks.
+                         Inventory Management Systems
+                         ASP.Net - C# - MVC3 – CVS – JIRA – Jquery – CSS3 – JSON
+                         QuickBooks – SQL2008 RS – SSIS - IIS7 
+                        Developer for MethodFactory.com
+                        - Complex MS Commerce Server Integrations
+                        - Integration of complex services with Commerce Solutions
+                        - SQL2008 RS – MVC3 – TFS – Jquery – CSS – JSON - XML
+                        - MS Web Services – SSIS – MS BIZTALK Server
+                        -       E Commerce Software Customization and Integration for:
+                                -  http://www.NUK.co.uk
+                                -  http://www.jarden.com
+                                -  http://www.worthsports.com/
+                                -  http://www.COLEMAN.com
+                                -  http://www.chaparral-racing.com/
+                        Solstice 
+                        - Insurance Brokers Service
+                        - HTML – JavaScript JQuery – Bootstrap – CSS -  JSON
+                        - SQL2008 RS – Model View Presenter (MVP) – VS2012
+                        - Asp .Net Web Api
+                        SBM Services
+                        - Create Slide Show Editor 
+                        - HTML5, Javascript, Jquery. Foundation – SQL 2008RS
+                        - CSS3 – MVC3 – Web Services – Web Services – Json - XML 
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">inContact (Informatech Contractor)</div>
+                    <div class="address">
+                      <a href="http://informatech.cr/" target="_blank"><i class="fa fa-globe ico"></i> http://informatech.cr/</a>
+                    </div>
+                    <div class="year">Noviembre 2009 – Mayo 2012</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Senior Software Engineer</div>
+                    <div class="description">
+                    - Reporting solutions
+                      -> SQL Server Reporting Services Solutions
+                    - QlikView Businees Intelligence II 
+                      -> Sql Scripts - Stored procedures - Security Setup
+                      -> Calculation of metrics, Data Organization, Data Dictionary
+                    - SSIS Projects - Data ETLs.
+                      -> Creation of etls to export transactional data to datawarehouse 
+                    - SalesForce Integration.
+                      -> C++ plugin for website.
+                      -> Integrate C++ with .net libraries.
+                      -> Backend webservices
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Skybook</div>
+                    <div class="address">
+                      <a href="http://piedpiper.com" target="_blank"><i class="fa fa-globe ico"></i> http://www.skybook.com</a>
+                    </div>
+                    <div class="year">Febrero 2001 – July 2009</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Software Engineer</div>
+                    <div class="description">
+                      - Design and Programming of Company's Intranet for:
+                          Manage Clients accounts information.
+                          Manage process of report deposits Account.
+                          Manage process of withdraw money from Accounts
+                          Fraud detection. Several processors integration
+                      - Basic Network support
+                          DNS - DHCP - Proxy servers - ISA - DC - Active Directory
+                      - SQL 2000 - 2005 Server Administration
+                          Database Backup and Recovery Plans
+                          Database High Availability
+                      - Database programming
+                          Sql Server Scripts
+                          Stored procedures
+                      - ASI Betting Software changes
+                          Web development of front end pages. asp, asp .net
+                          Creation and maintenance of marketing websites.
+                          Programming of Affiliates Website
+                      - Python, MySql
+                        Transforming and moving data over text files.
+                        Parse Information, insert to databases. 
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
                         <li class="list-group-item"></li>
