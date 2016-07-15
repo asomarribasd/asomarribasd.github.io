@@ -129,7 +129,7 @@ Gracias al sistema de bloques de Javascript (Scopes) se pueden desarrollar scrip
 
 Según la definición oficial, en Javascript las funciones son objetos de primera clase, por que estos pueden tener propiedades y metodos, como cualquier otro objeto. De esta manera, para declarar los objetos, que tradicionalmente lo hacemos en la mayoria de lenguajes con la clausula `class`, en Javascript usamos la misma definicion que usamos para definir una Funcion, con la clausula `function`.
 
-#### Definicion de una funcion tradicional
+### Definicion de una funcion tradicional
 
 Traditionally, you can define a function first and call it later.
 Tradicionalmente, se puede definir una funcion  primeray llamarla nuevamenre
@@ -156,7 +156,7 @@ pet('dog'); // displays - A dog
 
 ```
 
-Una funcion tambien puede ser declarada dentro de un objeto.
+Una funcion también puede ser declarada dentro de un objeto.
 
 ``` javascript
 
@@ -166,7 +166,58 @@ var boss = {
 };
 
 boss.pay(); // displays - $100
-Function returns Function
+
+```
+
+### Una funcion que retorna otra funcion
+
+Javascript soporta declarar una funcion dentro de otra, y retornarla como resultado de la funcion padre, de esta forma, al llamar a una funcion padre A, podria terminar con una funcion hija B como resultado. Veamos un ejemplo.
+
+``` javascript
+
+function makeCounter() {
+	var current = 0;
+	var p = function inicial(x) {
+		if (x >= 0) { current = x; }
+        if (current < 0) { return 0; }
+        console.log(current--);
+	}
+	return p;
+}
+
+var c = makeCounter();
+c(42); // Displays - 42
+c();   // Displays - 41
+c();   // Displays - 40
+
+```
+
+En el ejemplo makeCounter() retorna p como una referencia ala funcion llamada Inicial. Cuando posteriormente instanciamos la variable c, estamos instanciando realmente el resultado de esa asignacion, que es otra funcion la cual podemos llamar seguidamente enviandole un numero como parametro. Como la funcion existe como resultado de esa primera instancia puede recordar valores de ejecuciones previas(Si un efecto curioso que no esperas encontrarte).
+
+Notese que la funcion se retorna como el objeto asignado, es decir sin parentesis `return p;` de otra manera si se retorna con el parentesis `return p();` estariamos ejecutando la funcion y retornando su resultado, no la funcion como tal.
+
+### Funciones como parametro de otra función (Callback)
+
+En Javascript, una funcion puede ser tratada como un parametro de otra funcion. Por su caracteristica de ser tratado como objeto.
+
+``` javascript
+
+function printMessage (message) {
+	console.log(message)
+}
+
+function processResult (result, aCallbackFunction) {
+	var message = '';
+	if (result == 0) {
+		message = 'Oh! It failed!';
+	} else {
+		message = 'You made it successful!';
+	}
+	aCallbackFunction(message);
+}
+
+
+processResult('done', printMessage); // Despliega - You made it successful!
 
 ```
 
