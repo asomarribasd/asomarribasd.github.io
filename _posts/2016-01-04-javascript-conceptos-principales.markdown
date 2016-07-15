@@ -202,9 +202,30 @@ En Javascript, una funcion puede ser tratada como un parametro de otra funcion. 
 
 ``` javascript
 
-function printMessage (message) {
-	console.log(message)
+function imprimirMensaje (mensaje) {
+	console.log(mensaje);
 }
+
+function procesarResultado (result, aCallbackFunction) {
+	var mensaje = '';
+	if (result == 0) {
+		mensaje = 'Fallaste, intenta denuevo!';
+	} else {
+		mensaje = 'Buen trabajo, terminaste!';
+	}
+	aCallbackFunction(mensaje);
+}
+
+
+procesarResultado('done', imprimirMensaje); // Despliega - Buen trabajo, terminaste!
+
+```
+
+Para este ejemplo declaramos dos funciones: imprimirMensaje y procesarResultado. la función procesarResultado resive dos parametros, el primero es el resultado a evaluar, y el segundo la funcóon que se ejecutara internamente, esto le da a la función una capacidad de que se le inyectecte código para podificar en forma parcial su ejecucion.
+
+Tambien se puede declarar una funcion anonima directamente en el espacio del parametro sin tener que definirla antes, de hecho esta es una practica muy frecuente en el llamado de funciones que tienen un callback al terminar la ejecucion.
+
+``` javascript
 
 function processResult (result, aCallbackFunction) {
 	var message = '';
@@ -216,10 +237,117 @@ function processResult (result, aCallbackFunction) {
 	aCallbackFunction(message);
 }
 
-
-processResult('done', printMessage); // Despliega - You made it successful!
+processResult('done', function(message) {
+	console.log(message);
+});
 
 ```
 
+Noten que esta vez no existe una declaracion explicita de una funcion Imprimir Mensaje, si no que, la funcion se pasa anonima por prametro, directamente en el llamado de processResult.
 
-Cualquier duda, solo pregunten.
+Hay que recordar que javascript es un lenguaje asyncrono, algunas veces tenemos partes de la applicacion que se deben ejecutar, solamente cuando un otro proceso ya temino.
+Esta es la forma de hacerlo, enviando funciones tipo callBack, que serane ejecutadas cuando el flujo asi lo requiera.
+
+## Objetos y Prototipos
+
+Nuevamente acudamos a la definicion oficial, dice que todos los objetos en Javascript son decendientes del objeto `Object`. Y heredan todos sus metodos y propiedades de `Object.Prototype`
+
+Que significa eso? Bueno basicamente que todo es de type Object, ya sea u narray, string o funcion tienen ese comun denominador como base. De aqui deducimos que como una funcion es un tipo especial de objeto, tambien tiene la capacidad de tener propiedades y sub metodos. Ademas de las propiedades y metodos declarados, tammbien hereda de una propiedad especial llamada `prototype`. Que inicia como un objeto en blanco y cuando se el objeto se construye hereda todas las propiedades en su constructor.
+
+Como resultado de esto, se puede utilizar las funciones para declarar estricturas parecidas a lo que conocemos como clases en los lenguajes orientados a objetos.
+
+### Definición de 'Clases'
+
+``` javascript
+
+var Telefono = function (numero) {
+  // Inicializacion
+  this.numero = numero;
+	this.extension = "";
+	this.pais = "";
+}
+
+```
+
+### Agregar Metodos
+
+Tambien puedes ampliar la funcionalidad de tu objeto luego de ser declarado, agregando por ejemplo methodos, de la siguiente manera:
+
+``` javascript
+
+Telefono.prototype.call = function () {
+	console.log('Llamando...!');
+}
+
+Telefono.prototype.sms = function (mensaje) {
+	console.log('Enviando Mensaje: '+mensaje);
+}
+
+```
+
+Tambien podrias sobre escribir completamente el objeto `prototype` con todas tus funciones. Eso si recordando que en este caso sobre escribira todo lo que tiene.
+
+``` javascript
+
+Telefono.prototype = {
+  call: function () {
+    console.log('Llamando...!');
+  },
+  sms: function (mensaje) {
+    console.log('Enviando Mensaje: '+mensaje);
+  }
+}
+
+```
+
+## Construccion y ejecución de la instancia
+
+``` javascript
+
+var miTelefono = new Telefono('506');
+miTelefono.call(); // Despliega - Llamando ...!
+
+```
+
+## Exportar e importar modulos (Module Export and import)
+
+En javascript, se pueden importar el equivalente a librerias, o modulos, que por lo general son contenidos en un mismo archivo, esto para poder reutilizar codigo  eficientemente.
+
+Para este ejemplo crearemos dos archivos:
+
+#### mascota.js
+
+Primero definimos el modulo Mascota
+
+``` javascript
+'use strict';
+
+var Mascota = function (nombreMascota) {
+	this.miNombre = nombreMascota;
+}
+
+Pet.prototype.hable = function(message) {
+	console.log(this.miNombre +' dice '+ message);
+}
+
+module.exports.Mascota = Mascota;
+
+```
+#### index.js
+
+Ocupamos hacer uso de la libreria en nuestro nuevo archivo, para ello tenemos que importarlo.
+
+``` javascript
+'use strict';
+
+var mascota = require('./mascota');
+
+var miPerro = new mascota.Mascota('Husky');
+
+miPerro.hable('Gua Gua, tengo hambre!'); // displays - Husky says blah blah
+
+```
+
+En el segundo archivo, se importa la libreria mascota y se le asigna a una variable, de modo que el modulo exportado en ese archivo se comporta como la declaracion de un objeto.
+
+Cualquier duda, o si desean que incluya otro tema, solo pregunten.
