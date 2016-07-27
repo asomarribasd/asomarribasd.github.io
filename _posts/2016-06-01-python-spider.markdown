@@ -35,8 +35,21 @@ from urllib import parse
 
 ## Conexion al WebSite
 
+``` python
+
+response = urlopen(theUrl)
+
+if response.getheader('Content-Type')=='text/html':
+            htmlBytes = response.read()
+
+
+```
 
 ## Examinando los html tags
+
+``` python
+
+```
 
 
 ## Recomendaciones
