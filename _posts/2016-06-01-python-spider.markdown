@@ -21,9 +21,17 @@ Links: Los links son referencias a otros sitios o paginas en el mismo sitio. Ant
 ## Sobre el ejemplo
 
 En este ejemplo aprenderemos como explorar una pagina, buscaremos un texto determinado y adicionalmente exploraremos la pagina en busca de referencias a otros sitios. Sientanse libres de modificar el codigo, cualquier correccion o mejora, no duden en enviarme un correo.
+Finalmente, las librerias que usaremos y el codigo en general esta hecho para correr sobre la version 3.x de python.
 
 ## Sobre las librerias
 
+``` python
+
+from html.parser import HTMLParser  
+from urllib.request import urlopen  
+from urllib import parse
+
+```
 
 ## Conexion al WebSite
 
