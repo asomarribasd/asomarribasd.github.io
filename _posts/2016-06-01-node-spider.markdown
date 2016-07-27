@@ -2,8 +2,8 @@
 layout: post
 title:  "Como crear un Web Crawler / Spider (araña) en Python"
 date:   2016-06-01 19:00:00
-categories: [python, spyder, crawler]
-tags: [python, spyder]
+categories: [node, javascript, spider, crawler]
+tags: [node, javascript, spider]
 ---
 
 
@@ -25,29 +25,22 @@ Finalmente, las librerias que usaremos y el codigo en general esta hecho para co
 
 ## Sobre las librerias
 
-``` python
+``` javascript
 
-from html.parser import HTMLParser  
-from urllib.request import urlopen  
-from urllib import parse
+
 
 ```
 
 ## Conexion al WebSite
 
-``` python
-
-response = urlopen(theUrl)
-
-if response.getheader('Content-Type')=='text/html':
-            htmlBytes = response.read()
+``` javascript
 
 
 ```
 
 ## Examinando los html tags
 
-``` python
+``` javascript
 
 ```
 
