@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Leyendo websites con Python"
+title:  "Como crear un Spider (araña) en Javascript - Node"
 date:   2015-11-27 19:56:00
 categories: [python, spider, crawler]
 tags: [python, spider]
@@ -25,6 +25,8 @@ Finalmente, las librerias que usaremos y el codigo en general esta hecho para co
 
 ## Sobre las librerias
 
+Necesitaremos de solo 3 librerias para este ejemplo:
+
 ``` python
 
 from html.parser import HTMLParser  
@@ -32,6 +34,10 @@ from urllib.request import urlopen
 from urllib import parse
 
 ```
+
+`urlopen` como podras intuirlo es la libreria que utilizaremos para conectarnos a la pagina que queremos leer.
+`parse`
+`HTMLParser`
 
 ## Conexion al WebSite
 

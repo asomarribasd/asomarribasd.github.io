@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Como crear un Web Crawler / Spider (araña) en Python"
+title:  "Como crear un Spider (araña) en Javascript - Node"
 date:   2016-06-01 19:00:00
 categories: [node, javascript, spider, crawler]
 tags: [node, javascript, spider]
