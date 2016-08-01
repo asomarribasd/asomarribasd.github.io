@@ -46,14 +46,38 @@ from urllib import parse
 response = urlopen(theUrl)
 
 if response.getheader('Content-Type')=='text/html':
-            htmlBytes = response.read()
-
+    htmlBytes = response.read()
+    # No hay que olvidar convertir los bits a string antes de trabajar con el resultado.
+    htmlString = htmlBytes.decode("utf-8")
 
 ```
 
 ## Examinando los html tags
 
+Una libreria de python bastante util para recolectar datos de algunas paginas es el `HTMLParser`,
+es especialmente util si lo que se busca es por ejemplo extraer datos de una pagina con un formato ya conocido.
+De esa manera puedes buscar por ids que te interesan y guardar los datos encontrados.
+
+La forma de implementar esta libreria es heredando de ella y sobre escribiendo alugas de las funciones claves.
+Veamos un ejemplo.
+
 ``` python
+
+from html.parser import HTMLParser
+
+class MiPropioHTMLParser(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        print("Se encontro el inicio de un tag:", tag)
+    def handle_endtag(self, tag):
+        print("Se encontro el final de un tag :", tag)
+    def handle_data(self, data):
+        print("Datos encontrados  :", data)
+
+parser = MyHTMLParser()
+parser.feed('<html><head><title>Test</title></head>'
+            '<body><h1>Parse me!</h1></body></html>')
+
+# Ejemplo de la pagina de ayuda de HTMLParser de python
 
 ```
 
