@@ -83,3 +83,10 @@ parser.feed('<html><head><title>Test</title></head>'
 
 
 ## Recomendaciones
+
+Si quieren trabajar con `HTMLParser` les recomiendo que si tienen que buscar elementos diferentes creen diferentes tipos de parsers. Por ejemplo uno para buscar y explorar links, otro para recuperar los datos de una pagina especifica, de un sitio X, etc. De esta manera mantienen la funcionalidad segregada y les sera mucho mas facil de implementar y mantener.
+
+Existen librerias mas elaboradas para recorrer el contenido de una pagina web.
+Por ejemplo talvez quieran darse una vuelta por la libreria:
+http://scrapy.org/
+Les podria ayudar a buscar contenido y tags por medio de su ruta en una serie de tags.
