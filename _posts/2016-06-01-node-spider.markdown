@@ -27,7 +27,8 @@ Finalmente, las librerias que usaremos y el codigo en general esta hecho para co
 
 ``` javascript
 
-
+var request = require('request');
+var cheerio = require('cheerio');
 
 ```
 
@@ -35,6 +36,20 @@ Finalmente, las librerias que usaremos y el codigo en general esta hecho para co
 
 ``` javascript
 
+var linkPagina = "http://www.slothslab.com";
+console.log("Abriendo pagina " + pageToVisit);
+request(pageToVisit, function(error, response, body) {
+   if(error) {
+     console.log("Error: " + error);
+   }
+   // Check status code (200 is HTTP OK)
+   console.log("Status code: " + response.statusCode);
+   if(response.statusCode === 200) {
+     // Parse the document body
+     var $ = cheerio.load(body);
+     console.log("Page title:  " + $('title').text());
+   }
+});
 
 ```
 
