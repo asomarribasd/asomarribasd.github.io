@@ -32,6 +32,11 @@ var cheerio = require('cheerio');
 
 ```
 
+Request es un cliente de http, lo que necesitamos para poder navegar inicialmente al sitio y pagina que queremos explorar, es muy facil de implementar y altamente configurable, lo que nos permite trabajar en un llamado corto, pero extendernos si lo ocuparamos.
+
+Cheerio es una implementacion de jquery, para correr del lado del servidor. La belleza de usar esta libreria radica en lo facil que puedes encontrar los datos que buscas. Utilizando los mismos metodos que con jquery puedes localizar un objeto por la clase de css, su nombre, etc.
+
+
 ## Conexion al WebSite
 
 ``` javascript
