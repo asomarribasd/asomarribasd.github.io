@@ -4,27 +4,37 @@ layout: default
 
 <div class="container">
 <div class="row">
-<div class="home col-md-8">
-<img src="../images/SlothFace.png" style="border-radius: 50%;">
-  <h1 class="page-heading">Publicaciones recientes</h1>
-	<br />
-  <ul class="post-list">
-    {% for post in site.posts limit:15 %}
-      <li>
-        <h4>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h4>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="home col-md-8">
+  <img src="../images/SlothFace.png" style="border-radius: 50%;">
+    <h1 class="page-heading">Publicaciones recientes</h1>
+    <br />
+    <ul class="post-list">
+      {% for post in site.posts limit:15 %}
+        <li>
+          <h4>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h4>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
 
-  <p class="rss-subscribe">Subscribase <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <p class="rss-subscribe">Subscribase <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
-<div class="col-md-4">Release - 01 / 12 / 2015 </br>
-	<img src="/images/Web-en-construccion.jpg" width="250px"></br>
-	<img src="/images/bilingual-watch-your-step-sign.png" width="250px">
-</div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Footer main page -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:250px"
+     data-ad-client="ca-pub-0353256987902243"
+     data-ad-slot="4616264956"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  </div>
+  <div class="col-md-4"> Siempre en construccion </br>
+    <img src="/images/Web-en-construccion.jpg" width="250px"></br>
+    <img src="/images/bilingual-watch-your-step-sign.png" width="250px">
+  </div>
 </div>
 </div>
