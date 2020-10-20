@@ -56,8 +56,6 @@ Si quieres que solo exista una forma de accesso para mayor control, Singleton es
 
 {% endhighlight %}
 
-
-
 ## Implementacion de un patron Singleton C\#.
 
 ### Esta variacion se inicializa la primera vez que se utiliza.
@@ -102,10 +100,3 @@ Puede que tu singleton consuma muchos recursos, o que solo por performance no qu
     }
 
 {% endhighlight %}
-
-
-
-
-
-
-
