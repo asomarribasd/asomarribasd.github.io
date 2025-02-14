@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introducción a Python: Como instalarlo y una introduccion básica a la sintaxis"
+title:  "Introducción a Python: Como instalarlo a la sintaxis"
 date:   2016-01-10 19:00:00
 categories: [python]
 tags: [python, sintaxis, tipos de dato]
