@@ -2,7 +2,7 @@
 layout: post
 title:  "Python performance"
 date:   2016-03-01 19:00:00
-categories: [Python, performance]
+categories: [python, performance]
 tags: [Python, performance]
 ---
 
