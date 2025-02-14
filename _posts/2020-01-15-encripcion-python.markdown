@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Guardando un secreto con Python"
-date:   2018-01-15 19:00:00
+date:   2020-01-15 19:00:00
 categories: [python, seguridad]
 tags: [python, seguridad]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Estructura de un programa en Python"
-date:   2016-01-25 18:00:00
+date:   2018-01-25 18:00:00
 categories: [python]
 tags: [python]
 ---
