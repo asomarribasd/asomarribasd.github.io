@@ -69,4 +69,7 @@ Utilizando patrones de diseno que son de conocimiento comun logramos que nuestro
 | Template Method | Este patrón define el esqueleto de un algoritmo en una clase base, permitiendo que las subclases implementen detalles específicos sin cambiar la estructura general. |  
 | Visitor | Este patrón permite definir nuevas operaciones sobre elementos de una estructura de objetos sin cambiar las clases de los elementos. |
 
-Espero que te sea útil. Si necesitas más detalles o alguna aclaración, no dudes en decírmelo.
+Espero en proximos blogs ampliar en como imlementar cada Patron.
+
+Regresen pronto
+
